@@ -1,0 +1,240 @@
+---------------------------------------------------------------
+[ 2019-01-22T13:36:36+08:00 ] 127.0.0.1 OPTIONS www.api.com/admin/Login/index
+[运行时间：0.412024s] [吞吐率：2.43req/s] [内存消耗：1,532.27kb] [文件加载：41]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Miss',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'apiauth,content-type',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'access-control-request-method' => 'POST',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'admin' => 'Login',
+)
+[ info ] [ RUN ] app\admin\controller\Miss->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\Miss.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-22T13:36:36+08:00 ] 127.0.0.1 POST www.api.com/admin/Login/index
+[运行时间：0.570032s] [吞吐率：1.75req/s] [内存消耗：2,820.63kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => 'null',
+  'content-length' => '39',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'root',
+  'password' => '123456',
+)
+[ info ] [ CACHE ] INIT Redis
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user` [ RunTime:0.091005s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_user` WHERE  `username` = 'root'  AND `password` = '912601e4ad1b308c9ae41877cf6ca754' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_data` [ RunTime:0.064004s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_user_data` WHERE  `uid` = '1' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `admin_user_data`  SET `loginTimes`=30,`lastLoginTime`=1548135396  WHERE  `id` = 1 [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.047002s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `hide` = 0 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-01-22T13:36:50+08:00 ] 127.0.0.1 OPTIONS www.api.com/admin/Log/index?page=1&size=10&type=&keywords=
+[运行时间：0.061004s] [吞吐率：16.39req/s] [内存消耗：1,532.28kb] [文件加载：41]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Miss',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'apiauth',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'access-control-request-method' => 'GET',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'size' => '10',
+  'type' => '',
+  'keywords' => '',
+  'admin' => 'Log',
+)
+[ info ] [ RUN ] app\admin\controller\Miss->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\Miss.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-22T13:36:50+08:00 ] 127.0.0.1 GET www.api.com/admin/Log/index?page=1&size=10&type=&keywords=
+[运行时间：0.320019s] [吞吐率：3.12req/s] [内存消耗：2,896.06kb] [文件加载：62]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT Redis
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiAuth @ [ RunTime:0.024001s ]
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiPermission @ [ RunTime:0.010001s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\AdminLog @ [ RunTime:0.169009s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Log',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => '9fc94aa0871758afc3390d673da8e622',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'size' => '10',
+  'type' => '',
+  'keywords' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Log->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\Log.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `url` = 'admin/Log/index' LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_action` [ RunTime:0.067004s ]
+[ sql ] [ SQL ] INSERT INTO `admin_user_action` (`actionName` , `uid` , `nickname` , `addTime` , `url` , `data`) VALUES ('获取操作日志列表' , 1 , 'root' , 1548135410 , 'admin/Log/index' , '{\"page\":\"1\",\"size\":\"10\",\"type\":\"\",\"keywords\":\"\"}') [ RunTime:0.021002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `admin_user_action` LIMIT 1 [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_user_action` ORDER BY `addTime` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-01-22T15:04:40+08:00 ] 127.0.0.1 OPTIONS www.api.com/admin/Log/index?page=1&size=10&type=&keywords=%7B%22type%22:%22%22,%22keywords%22:%22%22,%22status%22:%22%22%7D
+[运行时间：0.057004s] [吞吐率：17.54req/s] [内存消耗：1,532.38kb] [文件加载：41]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Miss',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'apiauth',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'access-control-request-method' => 'GET',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'size' => '10',
+  'type' => '',
+  'keywords' => '{"type":"","keywords":"","status":""}',
+  'admin' => 'Log',
+)
+[ info ] [ RUN ] app\admin\controller\Miss->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\Miss.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-22T15:04:41+08:00 ] 127.0.0.1 GET www.api.com/admin/Log/index?page=1&size=10&type=&keywords=%7B%22type%22:%22%22,%22keywords%22:%22%22,%22status%22:%22%22%7D
+[运行时间：0.168010s] [吞吐率：5.95req/s] [内存消耗：2,896.41kb] [文件加载：62]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT Redis
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiAuth @ [ RunTime:0.003001s ]
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiPermission @ [ RunTime:0.002000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\AdminLog @ [ RunTime:0.121007s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Log',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => '9fc94aa0871758afc3390d673da8e622',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'size' => '10',
+  'type' => '',
+  'keywords' => '{"type":"","keywords":"","status":""}',
+)
+[ info ] [ RUN ] app\admin\controller\Log->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\Log.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.034002s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `url` = 'admin/Log/index' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_action` [ RunTime:0.031002s ]
+[ sql ] [ SQL ] INSERT INTO `admin_user_action` (`actionName` , `uid` , `nickname` , `addTime` , `url` , `data`) VALUES ('获取操作日志列表' , 1 , 'root' , 1548140681 , 'admin/Log/index' , '{\"page\":\"1\",\"size\":\"10\",\"type\":\"\",\"keywords\":\"{\\\"type\\\":\\\"\\\",\\\"keywords\\\":\\\"\\\",\\\"status\\\":\\\"\\\"}\"}') [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `admin_user_action` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_user_action` ORDER BY `addTime` DESC LIMIT 0,10 [ RunTime:0.001000s ]

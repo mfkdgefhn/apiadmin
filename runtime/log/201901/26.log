@@ -1,0 +1,109 @@
+---------------------------------------------------------------
+[ 2019-01-26T09:30:30+08:00 ] 127.0.0.1 OPTIONS www.api.com/admin/Login/index
+[运行时间：0.263015s] [吞吐率：3.80req/s] [内存消耗：1,535.95kb] [文件加载：41]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Miss',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'apiauth,content-type',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'access-control-request-method' => 'POST',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'admin' => 'Login',
+)
+[ info ] [ RUN ] app\admin\controller\Miss->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\Miss.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-26T09:30:30+08:00 ] 127.0.0.1 POST www.api.com/admin/Login/index
+[运行时间：0.599034s] [吞吐率：1.67req/s] [内存消耗：2,824.30kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => 'null',
+  'content-length' => '39',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'root',
+  'password' => '123456',
+)
+[ info ] [ CACHE ] INIT Redis
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.029002s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user` [ RunTime:0.090005s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_user` WHERE  `username` = 'root'  AND `password` = '912601e4ad1b308c9ae41877cf6ca754' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_data` [ RunTime:0.082005s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_user_data` WHERE  `uid` = '1' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `admin_user_data`  SET `loginTimes`=36,`lastLoginTime`=1548466230  WHERE  `id` = 1 [ RunTime:0.032001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.049002s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `hide` = 0 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-01-26T09:41:31+08:00 ] 127.0.0.1 GET www.api.com/
+[运行时间：0.239013s] [吞吐率：4.18req/s] [内存消耗：1,205.34kb] [文件加载：32]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-26T09:41:36+08:00 ] 127.0.0.1 GET www.api.com/admin
+[运行时间：0.043003s] [吞吐率：23.25req/s] [内存消耗：1,534.37kb] [文件加载：41]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Miss',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Miss->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\Miss.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.001000s ]
+[ info ] [ LOG ] INIT File

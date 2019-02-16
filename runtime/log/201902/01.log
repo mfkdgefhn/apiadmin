@@ -1,0 +1,949 @@
+---------------------------------------------------------------
+[ 2019-02-01T10:12:10+08:00 ] 127.0.0.1 OPTIONS www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190130
+[运行时间：0.040744s] [吞吐率：24.54req/s] [内存消耗：1,025.11kb] [文件加载：33]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-01T10:12:15+08:00 ] 127.0.0.1 OPTIONS www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190130
+[运行时间：0.030914s] [吞吐率：32.35req/s] [内存消耗：1,025.09kb] [文件加载：33]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-01T14:08:23+08:00 ] 127.0.0.1 GET www.api.com/api/bi/bi
+[运行时间：0.481993s] [吞吐率：2.07req/s] [内存消耗：1,382.61kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Miss',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=u9sfuiqvva4ed61njs8el6s1uu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'api' => 'bi',
+)
+[ info ] [ RUN ] app\api\controller\Miss->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\api\controller\Miss.php ]
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.052161s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-01T14:12:18+08:00 ] 127.0.0.1 GET www.api.com/api/bi/index
+[运行时间：0.039304s] [吞吐率：25.44req/s] [内存消耗：1,382.61kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Miss',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=u9sfuiqvva4ed61njs8el6s1uu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'api' => 'bi',
+)
+[ info ] [ RUN ] app\api\controller\Miss->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\api\controller\Miss.php ]
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.003878s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-01T14:17:13+08:00 ] 127.0.0.1 GET www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190130
+[运行时间：21.332946s] [吞吐率：0.05req/s] [内存消耗：1,451.52kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=u9sfuiqvva4ed61njs8el6s1uu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.anan.com/test_request.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2019',
+  'vJzdate' => '20190130',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\BuildResponse @response_send [ RunTime:0.002049s ]
+[ info ] [ LOG ] INIT File
+[ error ] [12170]SQLSTATE[HY000]: pdo_oci_handle_factory: ORA-12170: TNS:Connect timeout occurred
+ (ext\pdo_oci\oci_driver.c:634)[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\library\think\db\Connection.php:295]
+---------------------------------------------------------------
+[ 2019-02-01T14:24:14+08:00 ] 127.0.0.1 GET www.api.com/api/index
+[运行时间：0.035775s] [吞吐率：27.95req/s] [内存消耗：1,382.63kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Miss',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=u9sfuiqvva4ed61njs8el6s1uu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'api' => 'index',
+)
+[ info ] [ RUN ] app\api\controller\Miss->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\api\controller\Miss.php ]
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.001513s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-01T14:24:28+08:00 ] 127.0.0.1 GET www.api.com/api/index
+[运行时间：0.032355s] [吞吐率：30.91req/s] [内存消耗：1,383.30kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Miss',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=u9sfuiqvva4ed61njs8el6s1uu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'api' => 'index',
+)
+[ info ] [ RUN ] app\api\controller\Miss->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\api\controller\Miss.php ]
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.001143s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-01T14:24:29+08:00 ] 127.0.0.1 GET www.api.com/api/index
+[运行时间：0.039373s] [吞吐率：25.40req/s] [内存消耗：1,383.30kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Miss',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=u9sfuiqvva4ed61njs8el6s1uu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'api' => 'index',
+)
+[ info ] [ RUN ] app\api\controller\Miss->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\api\controller\Miss.php ]
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.001315s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-01T14:24:29+08:00 ] 127.0.0.1 GET www.api.com/api/index
+[运行时间：0.038782s] [吞吐率：25.79req/s] [内存消耗：1,383.30kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Miss',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=u9sfuiqvva4ed61njs8el6s1uu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'api' => 'index',
+)
+[ info ] [ RUN ] app\api\controller\Miss->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\api\controller\Miss.php ]
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.001102s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-01T14:24:29+08:00 ] 127.0.0.1 GET www.api.com/api/index
+[运行时间：0.034476s] [吞吐率：29.01req/s] [内存消耗：1,383.30kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Miss',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=u9sfuiqvva4ed61njs8el6s1uu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'api' => 'index',
+)
+[ info ] [ RUN ] app\api\controller\Miss->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\api\controller\Miss.php ]
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.001071s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-01T14:24:30+08:00 ] 127.0.0.1 GET www.api.com/api/index
+[运行时间：0.031644s] [吞吐率：31.60req/s] [内存消耗：1,383.30kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Miss',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=u9sfuiqvva4ed61njs8el6s1uu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'api' => 'index',
+)
+[ info ] [ RUN ] app\api\controller\Miss->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\api\controller\Miss.php ]
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.001082s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-01T14:24:30+08:00 ] 127.0.0.1 GET www.api.com/api/index
+[运行时间：0.033463s] [吞吐率：29.88req/s] [内存消耗：1,383.30kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Miss',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=u9sfuiqvva4ed61njs8el6s1uu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'api' => 'index',
+)
+[ info ] [ RUN ] app\api\controller\Miss->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\api\controller\Miss.php ]
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.001162s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-01T14:24:30+08:00 ] 127.0.0.1 GET www.api.com/api/index
+[运行时间：0.033802s] [吞吐率：29.58req/s] [内存消耗：1,383.30kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Miss',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=u9sfuiqvva4ed61njs8el6s1uu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'api' => 'index',
+)
+[ info ] [ RUN ] app\api\controller\Miss->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\api\controller\Miss.php ]
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.001091s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-01T14:24:30+08:00 ] 127.0.0.1 GET www.api.com/api/index
+[运行时间：0.032296s] [吞吐率：30.96req/s] [内存消耗：1,383.30kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Miss',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=u9sfuiqvva4ed61njs8el6s1uu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'api' => 'index',
+)
+[ info ] [ RUN ] app\api\controller\Miss->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\api\controller\Miss.php ]
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.001082s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-01T14:24:32+08:00 ] 127.0.0.1 GET www.api.com/api/index
+[运行时间：0.042236s] [吞吐率：23.68req/s] [内存消耗：1,383.30kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Miss',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=u9sfuiqvva4ed61njs8el6s1uu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'api' => 'index',
+)
+[ info ] [ RUN ] app\api\controller\Miss->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\api\controller\Miss.php ]
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.001400s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-01T14:24:35+08:00 ] 127.0.0.1 GET www.api.com/api/index/index
+[运行时间：0.036454s] [吞吐率：27.43req/s] [内存消耗：1,382.66kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Miss',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=u9sfuiqvva4ed61njs8el6s1uu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'api' => 'index',
+)
+[ info ] [ RUN ] app\api\controller\Miss->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\api\controller\Miss.php ]
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.001138s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-01T14:25:22+08:00 ] 127.0.0.1 GET www.api.com/bi/getNxfx_1
+[运行时间：0.024245s] [吞吐率：41.25req/s] [内存消耗：1,024.57kb] [文件加载：33]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-01T14:26:02+08:00 ] 127.0.0.1 GET www.api.com/bi/getNxfx_1
+[运行时间：0.034711s] [吞吐率：28.81req/s] [内存消耗：1,349.87kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=u9sfuiqvva4ed61njs8el6s1uu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\BuildResponse @response_send [ RunTime:0.000670s ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: vYear[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php:45]
+---------------------------------------------------------------
+[ 2019-02-01T14:27:00+08:00 ] 127.0.0.1 GET www.api.com/bi/getNxfx_1?vYear=2019&vJzdate=20190130
+[运行时间：21.178111s] [吞吐率：0.05req/s] [内存消耗：1,450.56kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=u9sfuiqvva4ed61njs8el6s1uu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2019',
+  'vJzdate' => '20190130',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\BuildResponse @response_send [ RunTime:0.001325s ]
+[ info ] [ LOG ] INIT File
+[ error ] [12170]SQLSTATE[HY000]: pdo_oci_handle_factory: ORA-12170: TNS:Connect timeout occurred
+ (ext\pdo_oci\oci_driver.c:634)[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\library\think\db\Connection.php:295]
+---------------------------------------------------------------
+[ 2019-02-01T14:40:10+08:00 ] 127.0.0.1 GET www.api.com/bi/getNxfx_1?vYear=2019&vJzdate=20190130
+[运行时间：7.212721s] [吞吐率：0.14req/s] [内存消耗：1,436.68kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=u9sfuiqvva4ed61njs8el6s1uu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2019',
+  'vJzdate' => '20190130',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\BuildResponse @response_send [ RunTime:0.000871s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.703735s ] oci:dbname=//10.10.1.39/test;charset=utf8
+[ sql ] [ SQL ] SELECT m.year_val nian,
+       m.season ji,
+       m.c_sotype_id laiyuan,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) + SUM(DECODE(B.DOCTYPE, 'INS', QTY)) fhl,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) qh,
+       SUM(DECODE(B.DOCTYPE, 'INS', QTY)) bh,
+       COUNT(DISTINCT M.PROD_CLS_NUM) KS,
+       max(m.e_name) kh
+  FROM B_SO B,
+       B_SOITEM S,
+       product_view_bi M,
+       C_SOTYPE C
+ WHERE B.ID(+) = S.B_SO_ID
+    AND S.M_PRODUCT_ID = M.m_product_id(+)
+    AND B.C_STORE_ID IN (278, 1016)
+    AND M.dhcz_id NOT IN (580, 584,1594,1723,1727)
+    AND B.STATUS = 2
+    AND S.STATUS = 2
+    AND M.ISACTIVE = 'Y'
+    AND M.PROD_SORT_ID = 240
+    and b.billdate BETWEEN 20170101 AND  20190130
+    AND m.year_val='2019'
+ GROUP BY m.year_val,m.season,m.c_sotype_id
+ ORDER BY m.year_val,m.season,m.c_sotype_id [ RunTime:5.439654s ]
+---------------------------------------------------------------
+[ 2019-02-01T14:41:04+08:00 ] 127.0.0.1 GET www.api.com/bi/getNxfx_1?vYear=2019&vJzdate=20190130
+[运行时间：21.141486s] [吞吐率：0.05req/s] [内存消耗：1,451.23kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=u9sfuiqvva4ed61njs8el6s1uu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2019',
+  'vJzdate' => '20190130',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\BuildResponse @response_send [ RunTime:0.000495s ]
+[ info ] [ LOG ] INIT File
+[ error ] [12170]SQLSTATE[HY000]: pdo_oci_handle_factory: ORA-12170: TNS:Connect timeout occurred
+ (ext\pdo_oci\oci_driver.c:634)[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\library\think\db\Connection.php:295]
+---------------------------------------------------------------
+[ 2019-02-01T14:42:57+08:00 ] 127.0.0.1 GET www.api.com/api/bi
+[运行时间：0.044941s] [吞吐率：22.25req/s] [内存消耗：1,382.56kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Miss',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=u9sfuiqvva4ed61njs8el6s1uu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'api' => 'bi',
+)
+[ info ] [ RUN ] app\api\controller\Miss->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\api\controller\Miss.php ]
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.001465s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-01T14:43:00+08:00 ] 127.0.0.1 GET www.api.com/api/bi/bi
+[运行时间：0.035745s] [吞吐率：27.98req/s] [内存消耗：1,382.61kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Miss',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=u9sfuiqvva4ed61njs8el6s1uu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'api' => 'bi',
+)
+[ info ] [ RUN ] app\api\controller\Miss->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\api\controller\Miss.php ]
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.001371s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-01T14:43:37+08:00 ] 127.0.0.1 GET www.api.com/api/bi/bi
+[运行时间：0.036364s] [吞吐率：27.50req/s] [内存消耗：1,384.80kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Miss',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=u9sfuiqvva4ed61njs8el6s1uu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'api' => 'bi',
+)
+[ info ] [ RUN ] app\api\controller\Miss->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\api\controller\Miss.php ]
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.001050s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-01T14:43:57+08:00 ] 127.0.0.1 GET www.api.com/api/bi/bi2
+[运行时间：0.033183s] [吞吐率：30.14req/s] [内存消耗：1,384.13kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Miss',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=u9sfuiqvva4ed61njs8el6s1uu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'api' => 'bi',
+)
+[ info ] [ RUN ] app\api\controller\Miss->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\api\controller\Miss.php ]
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.001076s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-01T14:44:00+08:00 ] 127.0.0.1 GET www.api.com/api/bi/bi
+[运行时间：0.043074s] [吞吐率：23.22req/s] [内存消耗：1,384.78kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Miss',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=u9sfuiqvva4ed61njs8el6s1uu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'purpose' => 'prefetch',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'api' => 'bi',
+)
+[ info ] [ RUN ] app\api\controller\Miss->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\api\controller\Miss.php ]
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.001104s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-01T14:44:00+08:00 ] 127.0.0.1 GET www.api.com/api/bi/bi3
+[运行时间：0.032973s] [吞吐率：30.33req/s] [内存消耗：1,384.13kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Miss',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=u9sfuiqvva4ed61njs8el6s1uu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'api' => 'bi',
+)
+[ info ] [ RUN ] app\api\controller\Miss->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\api\controller\Miss.php ]
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.001130s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-01T14:45:00+08:00 ] 127.0.0.1 OPTIONS www.api.com/admin/Login/index
+[运行时间：0.077539s] [吞吐率：12.90req/s] [内存消耗：1,300.47kb] [文件加载：42]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Miss',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'apiauth,content-type',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'access-control-request-method' => 'POST',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'admin' => 'Login',
+)
+[ info ] [ RUN ] app\admin\controller\Miss->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\Miss.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000715s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-01T14:45:01+08:00 ] 127.0.0.1 POST www.api.com/admin/Login/index
+[运行时间：1.215152s] [吞吐率：0.82req/s] [内存消耗：2,355.57kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => 'null',
+  'content-length' => '39',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'root',
+  'password' => '123456',
+)
+[ info ] [ CACHE ] INIT file
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000488s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.408154s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user` [ RunTime:0.046274s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_user` WHERE  `username` = 'root'  AND `password` = '912601e4ad1b308c9ae41877cf6ca754' LIMIT 1 [ RunTime:0.000816s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_data` [ RunTime:0.015214s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_user_data` WHERE  `uid` = '1' LIMIT 1 [ RunTime:0.000493s ]
+[ sql ] [ SQL ] UPDATE `admin_user_data`  SET `loginTimes`=7,`lastLoginTime`=1549003501  WHERE  `id` = 1 [ RunTime:0.200053s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.014242s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `hide` = 0 [ RunTime:0.000886s ]
+---------------------------------------------------------------
+[ 2019-02-01T14:45:01+08:00 ] 127.0.0.1 POST www.api.com/admin/Login/index
+[运行时间：0.258461s] [吞吐率：3.87req/s] [内存消耗：2,355.46kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => '740124d9c4f39adf01133a636154e57f',
+  'content-length' => '39',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'root',
+  'password' => '123456',
+)
+[ info ] [ CACHE ] INIT file
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000512s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001539s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user` [ RunTime:0.012976s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_user` WHERE  `username` = 'root'  AND `password` = '912601e4ad1b308c9ae41877cf6ca754' LIMIT 1 [ RunTime:0.000670s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_data` [ RunTime:0.013420s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_user_data` WHERE  `uid` = '1' LIMIT 1 [ RunTime:0.000642s ]
+[ sql ] [ SQL ] UPDATE `admin_user_data`  SET `loginTimes`=8  WHERE  `id` = 1 [ RunTime:0.096420s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.013355s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `hide` = 0 [ RunTime:0.000606s ]
+---------------------------------------------------------------
+[ 2019-02-01T14:45:23+08:00 ] 127.0.0.1 OPTIONS www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190131
+[运行时间：0.031639s] [吞吐率：31.61req/s] [内存消耗：1,026.62kb] [文件加载：33]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-01T14:55:31+08:00 ] 127.0.0.1 OPTIONS www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190131
+[运行时间：0.028431s] [吞吐率：35.17req/s] [内存消耗：1,026.62kb] [文件加载：33]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-01T14:59:22+08:00 ] 127.0.0.1 OPTIONS www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190131
+[运行时间：0.032829s] [吞吐率：30.46req/s] [内存消耗：1,026.62kb] [文件加载：33]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-01T14:59:56+08:00 ] 127.0.0.1 OPTIONS www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190131
+[运行时间：0.030260s] [吞吐率：33.05req/s] [内存消耗：1,026.62kb] [文件加载：33]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-01T15:00:03+08:00 ] 127.0.0.1 OPTIONS www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190131
+[运行时间：0.031972s] [吞吐率：31.28req/s] [内存消耗：1,026.62kb] [文件加载：33]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-01T15:01:18+08:00 ] 127.0.0.1 OPTIONS www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190131
+[运行时间：0.028776s] [吞吐率：34.75req/s] [内存消耗：1,026.62kb] [文件加载：33]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-01T20:56:30+08:00 ] 127.0.0.1 OPTIONS www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190131
+[运行时间：0.027262s] [吞吐率：36.68req/s] [内存消耗：1,026.62kb] [文件加载：33]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-01T20:56:39+08:00 ] 127.0.0.1 OPTIONS www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190131
+[运行时间：0.029917s] [吞吐率：33.43req/s] [内存消耗：1,026.62kb] [文件加载：33]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File

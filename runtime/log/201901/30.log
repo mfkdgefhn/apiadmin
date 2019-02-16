@@ -1,0 +1,1754 @@
+---------------------------------------------------------------
+[ 2019-01-30T00:20:56+08:00 ] 127.0.0.1 GET www.api.com/gmq
+[运行时间：0.026662s] [吞吐率：37.51req/s] [内存消耗：1,023.46kb] [文件加载：33]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-30T00:21:01+08:00 ] 127.0.0.1 GET www.api.com/gmq/gmq
+[运行时间：0.032898s] [吞吐率：30.40req/s] [内存消耗：1,314.00kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=187999278.222832264093937280.1548750246040.929; monitor_count=3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000737s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-30T00:21:09+08:00 ] 127.0.0.1 GET www.api.com/gmq/gmq
+[运行时间：0.038145s] [吞吐率：26.22req/s] [内存消耗：1,313.23kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000463s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-30T00:21:52+08:00 ] 127.0.0.1 GET www.api.com/gmq/oracle_line
+[运行时间：0.039096s] [吞吐率：25.58req/s] [内存消耗：1,357.84kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'oracle_line',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->oracle_line[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ DB ] INIT \think\oracle\Connection
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000464s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class '\think\oracle\Connection' not found[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\library\think\Db.php:102]
+---------------------------------------------------------------
+[ 2019-01-30T00:38:51+08:00 ] 127.0.0.1 GET www.api.com/gmq/oracle_line
+[运行时间：0.102691s] [吞吐率：9.74req/s] [内存消耗：1,358.74kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'oracle_line',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->oracle_line[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ DB ] INIT \think\oracle\Connection
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000684s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class '\think\oracle\Connection' not found[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\library\think\Db.php:102]
+---------------------------------------------------------------
+[ 2019-01-30T09:30:43+08:00 ] 127.0.0.1 GET www.api.com/gmq
+[运行时间：1.693300s] [吞吐率：0.59req/s] [内存消耗：993.63kb] [文件加载：33]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-30T09:30:45+08:00 ] 127.0.0.1 GET www.api.com/gmq/oracle_line
+[运行时间：3.359516s] [吞吐率：0.30req/s] [内存消耗：1,326.55kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'oracle_line',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->oracle_line[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ DB ] INIT \think\oracle\Connection
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.001030s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class '\think\oracle\Connection' not found[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\library\think\Db.php:102]
+---------------------------------------------------------------
+[ 2019-01-30T09:30:52+08:00 ] 127.0.0.1 GET www.api.com/gmq/index
+[运行时间：0.324634s] [吞吐率：3.08req/s] [内存消耗：1,281.56kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000776s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-30T10:51:01+08:00 ] 127.0.0.1 GET www.api.com/gmq/login
+[运行时间：0.131790s] [吞吐率：7.59req/s] [内存消耗：1,310.54kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->login[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000809s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-30T10:51:08+08:00 ] 127.0.0.1 GET www.api.com/gmq/line
+[运行时间：0.241001s] [吞吐率：4.15req/s] [内存消耗：1,357.52kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'line',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->line[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ DB ] INIT \think\oracle\Connection
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.001331s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class '\think\oracle\Connection' not found[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\library\think\Db.php:102]
+---------------------------------------------------------------
+[ 2019-01-30T10:51:18+08:00 ] 127.0.0.1 GET www.api.com/gmq/oracle_line
+[运行时间：0.037320s] [吞吐率：26.80req/s] [内存消耗：1,357.80kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'oracle_line',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->oracle_line[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ DB ] INIT \think\oracle\Connection
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000499s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class '\think\oracle\Connection' not found[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\library\think\Db.php:102]
+---------------------------------------------------------------
+[ 2019-01-30T10:51:52+08:00 ] 127.0.0.1 GET www.api.com/gmq/oracle_line
+[运行时间：0.071977s] [吞吐率：13.89req/s] [内存消耗：1,358.70kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'oracle_line',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->oracle_line[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ DB ] INIT \think\oracle\Connection
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000641s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class '\think\oracle\Connection' not found[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\library\think\Db.php:102]
+---------------------------------------------------------------
+[ 2019-01-30T10:59:57+08:00 ] 127.0.0.1 GET www.api.com/gmq/oracle_line
+[运行时间：0.115167s] [吞吐率：8.68req/s] [内存消耗：1,358.70kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'oracle_line',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->oracle_line[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ DB ] INIT \think\oracle\Connection
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.001036s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class '\think\oracle\Connection' not found[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\library\think\Db.php:102]
+---------------------------------------------------------------
+[ 2019-01-30T10:59:58+08:00 ] 127.0.0.1 GET www.api.com/gmq/oracle_line
+[运行时间：0.167983s] [吞吐率：5.95req/s] [内存消耗：1,358.70kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'oracle_line',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->oracle_line[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ DB ] INIT \think\oracle\Connection
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000670s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class '\think\oracle\Connection' not found[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\library\think\Db.php:102]
+---------------------------------------------------------------
+[ 2019-01-30T11:00:01+08:00 ] 127.0.0.1 GET www.api.com/gmq/oracle_line
+[运行时间：0.033087s] [吞吐率：30.22req/s] [内存消耗：1,358.00kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'oracle_line',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->oracle_line[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ DB ] INIT \think\oracle\Connection
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000529s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class '\think\oracle\Connection' not found[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\library\think\Db.php:102]
+---------------------------------------------------------------
+[ 2019-01-30T11:00:27+08:00 ] 127.0.0.1 GET www.api.com/gmq/index
+[运行时间：0.037938s] [吞吐率：26.36req/s] [内存消耗：1,313.20kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000621s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-30T11:00:45+08:00 ] 127.0.0.1 GET www.api.com/gmq/oracle_line
+[运行时间：0.037970s] [吞吐率：26.34req/s] [内存消耗：1,357.80kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'oracle_line',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->oracle_line[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ DB ] INIT \think\oracle\Connection
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000507s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class '\think\oracle\Connection' not found[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\library\think\Db.php:102]
+---------------------------------------------------------------
+[ 2019-01-30T11:01:55+08:00 ] 127.0.0.1 GET www.api.com/gmq/oracle_line
+[运行时间：0.039681s] [吞吐率：25.20req/s] [内存消耗：1,358.70kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'oracle_line',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->oracle_line[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ DB ] INIT \think\oracle\Connection
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000634s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class '\think\oracle\Connection' not found[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\library\think\Db.php:102]
+---------------------------------------------------------------
+[ 2019-01-30T11:02:29+08:00 ] 127.0.0.1 GET www.api.com/gmq/oracle_line
+[运行时间：0.038841s] [吞吐率：25.75req/s] [内存消耗：1,358.70kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'oracle_line',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->oracle_line[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ DB ] INIT \think\oracle\Connection
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000899s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class '\think\oracle\Connection' not found[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\library\think\Db.php:102]
+---------------------------------------------------------------
+[ 2019-01-30T12:10:25+08:00 ] 127.0.0.1 GET www.api.com/gmq/oracle_line
+[运行时间：0.053751s] [吞吐率：18.60req/s] [内存消耗：1,358.00kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'oracle_line',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->oracle_line[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ DB ] INIT \think\oracle\Connection
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000632s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class '\think\oracle\Connection' not found[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\library\think\Db.php:102]
+---------------------------------------------------------------
+[ 2019-01-30T12:13:09+08:00 ] 127.0.0.1 GET www.api.com/gmq/oracle_line
+[运行时间：0.039832s] [吞吐率：25.11req/s] [内存消耗：1,358.00kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'oracle_line',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->oracle_line[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ DB ] INIT \think\oracle\Connection
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000684s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class '\think\oracle\Connection' not found[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\library\think\Db.php:102]
+---------------------------------------------------------------
+[ 2019-01-30T12:13:19+08:00 ] 127.0.0.1 GET www.api.com/admin
+[运行时间：0.190554s] [吞吐率：5.25req/s] [内存消耗：1,295.34kb] [文件加载：42]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Miss',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Miss->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\Miss.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.001019s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-30T12:13:23+08:00 ] 127.0.0.1 GET www.api.com/api
+[运行时间：0.247051s] [吞吐率：4.05req/s] [内存消耗：1,380.06kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Miss',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\api\controller\Miss->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\api\controller\Miss.php ]
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.016703s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-30T20:02:01+08:00 ] 127.0.0.1 GET www.api.com/api
+[运行时间：0.051076s] [吞吐率：19.58req/s] [内存消耗：1,380.27kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Miss',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\api\controller\Miss->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\api\controller\Miss.php ]
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.001884s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-30T20:02:01+08:00 ] 127.0.0.1 GET www.api.com/api
+[运行时间：0.041907s] [吞吐率：23.86req/s] [内存消耗：1,380.27kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Miss',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\api\controller\Miss->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\api\controller\Miss.php ]
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.008603s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-30T20:02:33+08:00 ] 127.0.0.1 GET www.api.com/api
+[运行时间：0.045430s] [吞吐率：22.01req/s] [内存消耗：1,380.27kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Miss',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\api\controller\Miss->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\api\controller\Miss.php ]
+[ info ] [ BEHAVIOR ] Run app\api\behavior\BuildResponse @response_send [ RunTime:0.001550s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-30T20:04:34+08:00 ] 127.0.0.1 GET www.api.com/gmq/index
+[运行时间：0.036265s] [吞吐率：27.57req/s] [内存消耗：1,313.20kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000677s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-30T20:04:39+08:00 ] 127.0.0.1 GET www.api.com/gmq/login
+[运行时间：0.035936s] [吞吐率：27.83req/s] [内存消耗：1,310.54kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->login[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000460s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-30T20:04:43+08:00 ] 127.0.0.1 GET www.api.com/gmq/line
+[运行时间：0.039628s] [吞吐率：25.23req/s] [内存消耗：1,357.52kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'line',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->line[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ DB ] INIT \think\oracle\Connection
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000615s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class '\think\oracle\Connection' not found[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\library\think\Db.php:102]
+---------------------------------------------------------------
+[ 2019-01-30T20:04:57+08:00 ] 127.0.0.1 GET www.api.com/gmq/oracle_line
+[运行时间：0.046392s] [吞吐率：21.56req/s] [内存消耗：1,357.98kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'oracle_line',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'purpose' => 'prefetch',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->oracle_line[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ DB ] INIT \think\oracle\Connection
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000683s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class '\think\oracle\Connection' not found[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\library\think\Db.php:102]
+---------------------------------------------------------------
+[ 2019-01-30T20:06:47+08:00 ] 127.0.0.1 GET www.api.com/gmq/oracle_line
+[运行时间：0.035872s] [吞吐率：27.88req/s] [内存消耗：1,358.15kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'oracle_line',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->oracle_line[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ DB ] INIT \think\oracle\Connection
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000504s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class '\think\oracle\Connection' not found[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\library\think\Db.php:102]
+---------------------------------------------------------------
+[ 2019-01-30T20:22:51+08:00 ] 127.0.0.1 GET www.api.com/gmq/oracle_line
+[运行时间：0.039153s] [吞吐率：25.54req/s] [内存消耗：1,358.15kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'oracle_line',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->oracle_line[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ DB ] INIT \think\oracle\Connection
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000810s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class '\think\oracle\Connection' not found[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\library\think\Db.php:102]
+---------------------------------------------------------------
+[ 2019-01-30T20:24:46+08:00 ] 127.0.0.1 GET www.api.com/gmq/oracle_line
+[运行时间：0.031742s] [吞吐率：31.50req/s] [内存消耗：1,358.15kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'oracle_line',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->oracle_line[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ DB ] INIT \think\oracle\Connection
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000487s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class '\think\oracle\Connection' not found[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\library\think\Db.php:102]
+---------------------------------------------------------------
+[ 2019-01-30T20:24:47+08:00 ] 127.0.0.1 GET www.api.com/gmq/oracle_line
+[运行时间：0.036080s] [吞吐率：27.72req/s] [内存消耗：1,358.15kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'oracle_line',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->oracle_line[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ DB ] INIT \think\oracle\Connection
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000518s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class '\think\oracle\Connection' not found[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\library\think\Db.php:102]
+---------------------------------------------------------------
+[ 2019-01-30T20:24:47+08:00 ] 127.0.0.1 GET www.api.com/gmq/oracle_line
+[运行时间：0.032821s] [吞吐率：30.47req/s] [内存消耗：1,358.15kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'oracle_line',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->oracle_line[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ DB ] INIT \think\oracle\Connection
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000486s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class '\think\oracle\Connection' not found[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\library\think\Db.php:102]
+---------------------------------------------------------------
+[ 2019-01-30T20:24:47+08:00 ] 127.0.0.1 GET www.api.com/gmq/oracle_line
+[运行时间：0.030936s] [吞吐率：32.32req/s] [内存消耗：1,358.15kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'oracle_line',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->oracle_line[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ DB ] INIT \think\oracle\Connection
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000506s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class '\think\oracle\Connection' not found[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\library\think\Db.php:102]
+---------------------------------------------------------------
+[ 2019-01-30T20:27:08+08:00 ] 127.0.0.1 GET www.api.com/gmq/oracle_line
+[运行时间：0.037003s] [吞吐率：27.02req/s] [内存消耗：1,358.70kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'oracle_line',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->oracle_line[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ DB ] INIT \think\oracle\Connection
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000629s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class '\think\oracle\Connection' not found[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\library\think\Db.php:102]
+---------------------------------------------------------------
+[ 2019-01-30T22:26:20+08:00 ] 127.0.0.1 GET www.api.com/
+[运行时间：0.567053s] [吞吐率：1.76req/s] [内存消耗：1,020.25kb] [文件加载：33]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-30T22:36:35+08:00 ] 127.0.0.1 GET www.api.com/
+[运行时间：0.035310s] [吞吐率：28.32req/s] [内存消耗：1,020.37kb] [文件加载：33]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-30T22:39:54+08:00 ] 127.0.0.1 GET www.api.com/gmq/index
+[运行时间：0.468590s] [吞吐率：2.13req/s] [内存消耗：1,313.22kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.013786s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-30T22:40:01+08:00 ] 127.0.0.1 GET www.api.com/gmq/line
+[运行时间：0.096662s] [吞吐率：10.35req/s] [内存消耗：1,357.98kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'line',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'purpose' => 'prefetch',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->line[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ DB ] INIT \think\oracle\Connection
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000587s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class '\think\oracle\Connection' not found[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\library\think\Db.php:102]
+---------------------------------------------------------------
+[ 2019-01-30T22:40:01+08:00 ] 127.0.0.1 GET www.api.com/gmq/line
+[运行时间：0.033172s] [吞吐率：30.15req/s] [内存消耗：1,357.55kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'line',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->line[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ DB ] INIT \think\oracle\Connection
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000531s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class '\think\oracle\Connection' not found[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\library\think\Db.php:102]
+---------------------------------------------------------------
+[ 2019-01-30T22:40:07+08:00 ] 127.0.0.1 GET www.api.com/gmq/oracle_line
+[运行时间：0.031523s] [吞吐率：31.72req/s] [内存消耗：1,358.00kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'oracle_line',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'purpose' => 'prefetch',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->oracle_line[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ DB ] INIT \think\oracle\Connection
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000485s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class '\think\oracle\Connection' not found[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\library\think\Db.php:102]
+---------------------------------------------------------------
+[ 2019-01-30T22:40:08+08:00 ] 127.0.0.1 GET www.api.com/gmq/oracle_line
+[运行时间：0.036708s] [吞吐率：27.24req/s] [内存消耗：1,357.82kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'oracle_line',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->oracle_line[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ DB ] INIT \think\oracle\Connection
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000468s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class '\think\oracle\Connection' not found[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\library\think\Db.php:102]
+---------------------------------------------------------------
+[ 2019-01-30T23:05:01+08:00 ] 127.0.0.1 GET www.api.com/gmq/index
+[运行时间：0.034375s] [吞吐率：29.09req/s] [内存消耗：1,313.40kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'purpose' => 'prefetch',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000579s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-30T23:05:03+08:00 ] 127.0.0.1 GET www.api.com/gmq/index/index
+[运行时间：0.037883s] [吞吐率：26.40req/s] [内存消耗：1,313.25kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000519s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-30T23:06:07+08:00 ] 127.0.0.1 GET www.api.com/gmq/login
+[运行时间：0.040734s] [吞吐率：24.55req/s] [内存消耗：1,310.74kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'purpose' => 'prefetch',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->login[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000594s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-30T23:08:20+08:00 ] 127.0.0.1 GET www.api.com/
+[运行时间：0.029101s] [吞吐率：34.36req/s] [内存消耗：1,020.23kb] [文件加载：33]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-30T23:46:39+08:00 ] 127.0.0.1 GET www.api.com/gmq/line_oracle
+[运行时间：0.039889s] [吞吐率：25.07req/s] [内存消耗：1,340.63kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'line_oracle',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000617s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-30T23:46:49+08:00 ] 127.0.0.1 GET www.api.com/gmq/index
+[运行时间：0.032770s] [吞吐率：30.52req/s] [内存消耗：1,313.40kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'purpose' => 'prefetch',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000474s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-30T23:46:56+08:00 ] 127.0.0.1 GET www.api.com/gmq/gmq/getlist
+[运行时间：0.037078s] [吞吐率：26.97req/s] [内存消耗：1,313.25kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000621s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-30T23:47:12+08:00 ] 127.0.0.1 GET www.api.com/gmq/ndex/index
+[运行时间：0.023352s] [吞吐率：42.82req/s] [内存消耗：1,022.63kb] [文件加载：33]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-30T23:47:32+08:00 ] 127.0.0.1 GET www.api.com/gmq/line_oracle
+[运行时间：0.040074s] [吞吐率：24.95req/s] [内存消耗：1,340.63kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'line_oracle',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000793s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-30T23:48:00+08:00 ] 127.0.0.1 GET www.api.com/gmq/oracle_line
+[运行时间：0.045952s] [吞吐率：21.76req/s] [内存消耗：1,358.00kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'oracle_line',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'purpose' => 'prefetch',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->oracle_line[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ DB ] INIT \think\oracle\Connection
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000469s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class '\think\oracle\Connection' not found[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\library\think\Db.php:102]
+---------------------------------------------------------------
+[ 2019-01-30T23:48:58+08:00 ] 127.0.0.1 GET www.api.com/gmq/index/oracle_line
+[运行时间：0.035587s] [吞吐率：28.10req/s] [内存消耗：1,313.27kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000872s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-30T23:49:31+08:00 ] 127.0.0.1 GET www.api.com/gmq/line_oracle
+[运行时间：0.037021s] [吞吐率：27.01req/s] [内存消耗：1,340.84kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'line_oracle',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000509s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-30T23:50:22+08:00 ] 127.0.0.1 GET www.api.com/gmq/line_oracle
+[运行时间：0.030260s] [吞吐率：33.05req/s] [内存消耗：1,310.94kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'line_oracle',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->line_oracle[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000565s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-30T23:50:40+08:00 ] 127.0.0.1 GET www.api.com/gmq/line_oracle
+[运行时间：0.040794s] [吞吐率：24.51req/s] [内存消耗：1,358.35kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'line_oracle',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->line_oracle[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ DB ] INIT \think\oracle\Connection
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000625s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class '\think\oracle\Connection' not found[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\library\think\Db.php:102]
+---------------------------------------------------------------
+[ 2019-01-30T23:52:27+08:00 ] 127.0.0.1 GET www.api.com/gmq/line_oracle
+[运行时间：0.044569s] [吞吐率：22.44req/s] [内存消耗：1,358.35kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'line_oracle',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->line_oracle[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ DB ] INIT \think\oracle\Connection
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000690s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class '\think\oracle\Connection' not found[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\library\think\Db.php:102]
+---------------------------------------------------------------
+[ 2019-01-30T23:52:41+08:00 ] 127.0.0.1 GET www.api.com/gmq/line_oracle
+[运行时间：0.038519s] [吞吐率：25.96req/s] [内存消耗：1,358.35kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'line_oracle',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->line_oracle[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ DB ] INIT \think\oracle\Connection
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000491s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Class '\think\oracle\Connection' not found[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\library\think\Db.php:102]
+---------------------------------------------------------------
+[ 2019-01-30T23:53:11+08:00 ] 127.0.0.1 GET www.api.com/gmq/line_oracle
+[运行时间：0.301751s] [吞吐率：3.31req/s] [内存消耗：1,565.09kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'line_oracle',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->line_oracle[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000817s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.174671s ] oci:dbname=//10.10.1.39/test;charset=utf8
+[ sql ] [ SQL ] select * from c_store where id=846 [ RunTime:0.023330s ]
+---------------------------------------------------------------
+[ 2019-01-30T23:54:39+08:00 ] 127.0.0.1 GET www.api.com/gmq/line
+[运行时间：0.044259s] [吞吐率：22.59req/s] [内存消耗：1,307.06kb] [文件加载：42]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'line',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->line[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000864s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-01-30T23:55:43+08:00 ] 127.0.0.1 GET www.api.com/gmq/line
+[运行时间：0.058108s] [吞吐率：17.21req/s] [内存消耗：1,052.07kb] [文件加载：36]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'line',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000467s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]语法解析错误: syntax error, unexpected ':'[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php:35]
+---------------------------------------------------------------
+[ 2019-01-30T23:57:07+08:00 ] 127.0.0.1 GET www.api.com/gmq/line
+[运行时间：0.156975s] [吞吐率：6.37req/s] [内存消耗：1,917.59kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'gmq',
+    1 => 'index',
+    2 => 'line',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\gmq\controller\Index->line[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\gmq\controller\Index.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ BEHAVIOR ] Run app\gmq\behavior\BuildResponse @response_send [ RunTime:0.000669s ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Cannot instantiate abstract class think\db\Builder[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\library\think\db\Query.php:139]

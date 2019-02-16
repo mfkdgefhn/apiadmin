@@ -1,0 +1,2479 @@
+---------------------------------------------------------------
+[ 2019-02-02T09:12:26+08:00 ] 127.0.0.1 OPTIONS www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190131
+[运行时间：0.029316s] [吞吐率：34.11req/s] [内存消耗：1,026.61kb] [文件加载：33]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-02T09:12:39+08:00 ] 127.0.0.1 OPTIONS www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190201
+[运行时间：0.031270s] [吞吐率：31.98req/s] [内存消耗：1,026.62kb] [文件加载：33]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-02T09:14:59+08:00 ] 127.0.0.1 OPTIONS www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190201
+[运行时间：0.027471s] [吞吐率：36.40req/s] [内存消耗：1,026.62kb] [文件加载：33]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-02T09:15:28+08:00 ] 127.0.0.1 GET www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190201
+[运行时间：2.653889s] [吞吐率：0.38req/s] [内存消耗：1,438.47kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=u9sfuiqvva4ed61njs8el6s1uu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2019',
+  'vJzdate' => '20190201',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\BuildResponse @response_send [ RunTime:0.000742s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.651368s ] oci:dbname=//10.10.1.39/test;charset=utf8
+[ sql ] [ SQL ] SELECT m.year_val nian,
+       m.season ji,
+       m.c_sotype_id laiyuan,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) + SUM(DECODE(B.DOCTYPE, 'INS', QTY)) fhl,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) qh,
+       SUM(DECODE(B.DOCTYPE, 'INS', QTY)) bh,
+       COUNT(DISTINCT M.PROD_CLS_NUM) KS,
+       max(m.e_name) kh
+  FROM B_SO B,
+       B_SOITEM S,
+       product_view_bi M,
+       C_SOTYPE C
+ WHERE B.ID(+) = S.B_SO_ID
+    AND S.M_PRODUCT_ID = M.m_product_id(+)
+    AND B.C_STORE_ID IN (278, 1016)
+    AND M.dhcz_id NOT IN (580, 584,1594,1723,1727)
+    AND B.STATUS = 2
+    AND S.STATUS = 2
+    AND M.ISACTIVE = 'Y'
+    AND M.PROD_SORT_ID = 240
+    and b.billdate BETWEEN 20170101 AND  20190201
+    AND m.year_val='2019'
+ GROUP BY m.year_val,m.season,m.c_sotype_id
+ ORDER BY m.year_val,m.season,m.c_sotype_id [ RunTime:1.938445s ]
+---------------------------------------------------------------
+[ 2019-02-02T09:15:35+08:00 ] 127.0.0.1 OPTIONS www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190201
+[运行时间：0.033983s] [吞吐率：29.43req/s] [内存消耗：1,026.62kb] [文件加载：33]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-02T09:40:14+08:00 ] 127.0.0.1 OPTIONS www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190201
+[运行时间：0.026785s] [吞吐率：37.33req/s] [内存消耗：1,008.37kb] [文件加载：31]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined method think\Route::header()[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\biRoute.php:13]
+---------------------------------------------------------------
+[ 2019-02-02T09:40:42+08:00 ] 127.0.0.1 GET www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190201
+[运行时间：0.032136s] [吞吐率：31.12req/s] [内存消耗：1,008.54kb] [文件加载：31]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined method think\Route::header()[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\biRoute.php:13]
+---------------------------------------------------------------
+[ 2019-02-02T09:48:39+08:00 ] 127.0.0.1 OPTIONS www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190201
+[运行时间：0.027409s] [吞吐率：36.48req/s] [内存消耗：1,026.62kb] [文件加载：33]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-02T09:49:07+08:00 ] 127.0.0.1 OPTIONS www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190201
+[运行时间：0.026464s] [吞吐率：37.79req/s] [内存消耗：1,026.62kb] [文件加载：33]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-02T09:51:14+08:00 ] 127.0.0.1 GET www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190201
+[运行时间：1.861544s] [吞吐率：0.54req/s] [内存消耗：1,441.73kb] [文件加载：48]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000813s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=u9sfuiqvva4ed61njs8el6s1uu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2019',
+  'vJzdate' => '20190201',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\BuildResponse @response_send [ RunTime:0.001631s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.145416s ] oci:dbname=//10.10.1.39/test;charset=utf8
+[ sql ] [ SQL ] SELECT m.year_val nian,
+       m.season ji,
+       m.c_sotype_id laiyuan,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) + SUM(DECODE(B.DOCTYPE, 'INS', QTY)) fhl,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) qh,
+       SUM(DECODE(B.DOCTYPE, 'INS', QTY)) bh,
+       COUNT(DISTINCT M.PROD_CLS_NUM) KS,
+       max(m.e_name) kh
+  FROM B_SO B,
+       B_SOITEM S,
+       product_view_bi M,
+       C_SOTYPE C
+ WHERE B.ID(+) = S.B_SO_ID
+    AND S.M_PRODUCT_ID = M.m_product_id(+)
+    AND B.C_STORE_ID IN (278, 1016)
+    AND M.dhcz_id NOT IN (580, 584,1594,1723,1727)
+    AND B.STATUS = 2
+    AND S.STATUS = 2
+    AND M.ISACTIVE = 'Y'
+    AND M.PROD_SORT_ID = 240
+    and b.billdate BETWEEN 20170101 AND  20190201
+    AND m.year_val='2019'
+ GROUP BY m.year_val,m.season,m.c_sotype_id
+ ORDER BY m.year_val,m.season,m.c_sotype_id [ RunTime:1.655904s ]
+---------------------------------------------------------------
+[ 2019-02-02T10:03:06+08:00 ] 127.0.0.1 GET www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190201
+[运行时间：3.916143s] [吞吐率：0.26req/s] [内存消耗：1,438.17kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000517s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => '451e8e92151e376cddba9a31b9daee4c',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2019',
+  'vJzdate' => '20190201',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.218938s ] oci:dbname=//10.10.1.39/test;charset=utf8
+[ sql ] [ SQL ] SELECT m.year_val nian,
+       m.season ji,
+       m.c_sotype_id laiyuan,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) + SUM(DECODE(B.DOCTYPE, 'INS', QTY)) fhl,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) qh,
+       SUM(DECODE(B.DOCTYPE, 'INS', QTY)) bh,
+       COUNT(DISTINCT M.PROD_CLS_NUM) KS,
+       max(m.e_name) kh
+  FROM B_SO B,
+       B_SOITEM S,
+       product_view_bi M,
+       C_SOTYPE C
+ WHERE B.ID(+) = S.B_SO_ID
+    AND S.M_PRODUCT_ID = M.m_product_id(+)
+    AND B.C_STORE_ID IN (278, 1016)
+    AND M.dhcz_id NOT IN (580, 584,1594,1723,1727)
+    AND B.STATUS = 2
+    AND S.STATUS = 2
+    AND M.ISACTIVE = 'Y'
+    AND M.PROD_SORT_ID = 240
+    and b.billdate BETWEEN 20170101 AND  20190201
+    AND m.year_val='2019'
+ GROUP BY m.year_val,m.season,m.c_sotype_id
+ ORDER BY m.year_val,m.season,m.c_sotype_id [ RunTime:3.650874s ]
+---------------------------------------------------------------
+[ 2019-02-02T10:05:13+08:00 ] 127.0.0.1 GET www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190201
+[运行时间：1.801800s] [吞吐率：0.56req/s] [内存消耗：1,438.17kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000796s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => '451e8e92151e376cddba9a31b9daee4c',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2019',
+  'vJzdate' => '20190201',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.178093s ] oci:dbname=//10.10.1.39/test;charset=utf8
+[ sql ] [ SQL ] SELECT m.year_val nian,
+       m.season ji,
+       m.c_sotype_id laiyuan,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) + SUM(DECODE(B.DOCTYPE, 'INS', QTY)) fhl,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) qh,
+       SUM(DECODE(B.DOCTYPE, 'INS', QTY)) bh,
+       COUNT(DISTINCT M.PROD_CLS_NUM) KS,
+       max(m.e_name) kh
+  FROM B_SO B,
+       B_SOITEM S,
+       product_view_bi M,
+       C_SOTYPE C
+ WHERE B.ID(+) = S.B_SO_ID
+    AND S.M_PRODUCT_ID = M.m_product_id(+)
+    AND B.C_STORE_ID IN (278, 1016)
+    AND M.dhcz_id NOT IN (580, 584,1594,1723,1727)
+    AND B.STATUS = 2
+    AND S.STATUS = 2
+    AND M.ISACTIVE = 'Y'
+    AND M.PROD_SORT_ID = 240
+    and b.billdate BETWEEN 20170101 AND  20190201
+    AND m.year_val='2019'
+ GROUP BY m.year_val,m.season,m.c_sotype_id
+ ORDER BY m.year_val,m.season,m.c_sotype_id [ RunTime:1.572006s ]
+---------------------------------------------------------------
+[ 2019-02-02T10:06:13+08:00 ] 127.0.0.1 GET www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190201
+[运行时间：1.947373s] [吞吐率：0.51req/s] [内存消耗：1,438.17kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000569s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => '451e8e92151e376cddba9a31b9daee4c',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2019',
+  'vJzdate' => '20190201',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.135184s ] oci:dbname=//10.10.1.39/test;charset=utf8
+[ sql ] [ SQL ] SELECT m.year_val nian,
+       m.season ji,
+       m.c_sotype_id laiyuan,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) + SUM(DECODE(B.DOCTYPE, 'INS', QTY)) fhl,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) qh,
+       SUM(DECODE(B.DOCTYPE, 'INS', QTY)) bh,
+       COUNT(DISTINCT M.PROD_CLS_NUM) KS,
+       max(m.e_name) kh
+  FROM B_SO B,
+       B_SOITEM S,
+       product_view_bi M,
+       C_SOTYPE C
+ WHERE B.ID(+) = S.B_SO_ID
+    AND S.M_PRODUCT_ID = M.m_product_id(+)
+    AND B.C_STORE_ID IN (278, 1016)
+    AND M.dhcz_id NOT IN (580, 584,1594,1723,1727)
+    AND B.STATUS = 2
+    AND S.STATUS = 2
+    AND M.ISACTIVE = 'Y'
+    AND M.PROD_SORT_ID = 240
+    and b.billdate BETWEEN 20170101 AND  20190201
+    AND m.year_val='2019'
+ GROUP BY m.year_val,m.season,m.c_sotype_id
+ ORDER BY m.year_val,m.season,m.c_sotype_id [ RunTime:1.766559s ]
+---------------------------------------------------------------
+[ 2019-02-02T10:06:51+08:00 ] 127.0.0.1 GET www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190201
+[运行时间：1.854216s] [吞吐率：0.54req/s] [内存消耗：1,438.17kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000597s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => '451e8e92151e376cddba9a31b9daee4c',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2019',
+  'vJzdate' => '20190201',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.191060s ] oci:dbname=//10.10.1.39/test;charset=utf8
+[ sql ] [ SQL ] SELECT m.year_val nian,
+       m.season ji,
+       m.c_sotype_id laiyuan,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) + SUM(DECODE(B.DOCTYPE, 'INS', QTY)) fhl,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) qh,
+       SUM(DECODE(B.DOCTYPE, 'INS', QTY)) bh,
+       COUNT(DISTINCT M.PROD_CLS_NUM) KS,
+       max(m.e_name) kh
+  FROM B_SO B,
+       B_SOITEM S,
+       product_view_bi M,
+       C_SOTYPE C
+ WHERE B.ID(+) = S.B_SO_ID
+    AND S.M_PRODUCT_ID = M.m_product_id(+)
+    AND B.C_STORE_ID IN (278, 1016)
+    AND M.dhcz_id NOT IN (580, 584,1594,1723,1727)
+    AND B.STATUS = 2
+    AND S.STATUS = 2
+    AND M.ISACTIVE = 'Y'
+    AND M.PROD_SORT_ID = 240
+    and b.billdate BETWEEN 20170101 AND  20190201
+    AND m.year_val='2019'
+ GROUP BY m.year_val,m.season,m.c_sotype_id
+ ORDER BY m.year_val,m.season,m.c_sotype_id [ RunTime:1.614248s ]
+---------------------------------------------------------------
+[ 2019-02-02T10:06:57+08:00 ] 127.0.0.1 GET www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190201
+[运行时间：1.704080s] [吞吐率：0.59req/s] [内存消耗：1,438.17kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000605s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => '451e8e92151e376cddba9a31b9daee4c',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2019',
+  'vJzdate' => '20190201',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.146608s ] oci:dbname=//10.10.1.39/test;charset=utf8
+[ sql ] [ SQL ] SELECT m.year_val nian,
+       m.season ji,
+       m.c_sotype_id laiyuan,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) + SUM(DECODE(B.DOCTYPE, 'INS', QTY)) fhl,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) qh,
+       SUM(DECODE(B.DOCTYPE, 'INS', QTY)) bh,
+       COUNT(DISTINCT M.PROD_CLS_NUM) KS,
+       max(m.e_name) kh
+  FROM B_SO B,
+       B_SOITEM S,
+       product_view_bi M,
+       C_SOTYPE C
+ WHERE B.ID(+) = S.B_SO_ID
+    AND S.M_PRODUCT_ID = M.m_product_id(+)
+    AND B.C_STORE_ID IN (278, 1016)
+    AND M.dhcz_id NOT IN (580, 584,1594,1723,1727)
+    AND B.STATUS = 2
+    AND S.STATUS = 2
+    AND M.ISACTIVE = 'Y'
+    AND M.PROD_SORT_ID = 240
+    and b.billdate BETWEEN 20170101 AND  20190201
+    AND m.year_val='2019'
+ GROUP BY m.year_val,m.season,m.c_sotype_id
+ ORDER BY m.year_val,m.season,m.c_sotype_id [ RunTime:1.523285s ]
+---------------------------------------------------------------
+[ 2019-02-02T10:07:39+08:00 ] 127.0.0.1 GET www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190201
+[运行时间：1.729917s] [吞吐率：0.58req/s] [内存消耗：1,438.17kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000526s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => '451e8e92151e376cddba9a31b9daee4c',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2019',
+  'vJzdate' => '20190201',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.134175s ] oci:dbname=//10.10.1.39/test;charset=utf8
+[ sql ] [ SQL ] SELECT m.year_val nian,
+       m.season ji,
+       m.c_sotype_id laiyuan,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) + SUM(DECODE(B.DOCTYPE, 'INS', QTY)) fhl,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) qh,
+       SUM(DECODE(B.DOCTYPE, 'INS', QTY)) bh,
+       COUNT(DISTINCT M.PROD_CLS_NUM) KS,
+       max(m.e_name) kh
+  FROM B_SO B,
+       B_SOITEM S,
+       product_view_bi M,
+       C_SOTYPE C
+ WHERE B.ID(+) = S.B_SO_ID
+    AND S.M_PRODUCT_ID = M.m_product_id(+)
+    AND B.C_STORE_ID IN (278, 1016)
+    AND M.dhcz_id NOT IN (580, 584,1594,1723,1727)
+    AND B.STATUS = 2
+    AND S.STATUS = 2
+    AND M.ISACTIVE = 'Y'
+    AND M.PROD_SORT_ID = 240
+    and b.billdate BETWEEN 20170101 AND  20190201
+    AND m.year_val='2019'
+ GROUP BY m.year_val,m.season,m.c_sotype_id
+ ORDER BY m.year_val,m.season,m.c_sotype_id [ RunTime:1.559337s ]
+---------------------------------------------------------------
+[ 2019-02-02T10:07:46+08:00 ] 127.0.0.1 GET www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190201
+[运行时间：1.829207s] [吞吐率：0.55req/s] [内存消耗：1,438.17kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000672s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => '451e8e92151e376cddba9a31b9daee4c',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2019',
+  'vJzdate' => '20190201',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.214137s ] oci:dbname=//10.10.1.39/test;charset=utf8
+[ sql ] [ SQL ] SELECT m.year_val nian,
+       m.season ji,
+       m.c_sotype_id laiyuan,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) + SUM(DECODE(B.DOCTYPE, 'INS', QTY)) fhl,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) qh,
+       SUM(DECODE(B.DOCTYPE, 'INS', QTY)) bh,
+       COUNT(DISTINCT M.PROD_CLS_NUM) KS,
+       max(m.e_name) kh
+  FROM B_SO B,
+       B_SOITEM S,
+       product_view_bi M,
+       C_SOTYPE C
+ WHERE B.ID(+) = S.B_SO_ID
+    AND S.M_PRODUCT_ID = M.m_product_id(+)
+    AND B.C_STORE_ID IN (278, 1016)
+    AND M.dhcz_id NOT IN (580, 584,1594,1723,1727)
+    AND B.STATUS = 2
+    AND S.STATUS = 2
+    AND M.ISACTIVE = 'Y'
+    AND M.PROD_SORT_ID = 240
+    and b.billdate BETWEEN 20170101 AND  20190201
+    AND m.year_val='2019'
+ GROUP BY m.year_val,m.season,m.c_sotype_id
+ ORDER BY m.year_val,m.season,m.c_sotype_id [ RunTime:1.574559s ]
+---------------------------------------------------------------
+[ 2019-02-02T10:08:20+08:00 ] 127.0.0.1 GET www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190201
+[运行时间：3.666894s] [吞吐率：0.27req/s] [内存消耗：1,438.17kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000538s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => '451e8e92151e376cddba9a31b9daee4c',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2019',
+  'vJzdate' => '20190201',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.139392s ] oci:dbname=//10.10.1.39/test;charset=utf8
+[ sql ] [ SQL ] SELECT m.year_val nian,
+       m.season ji,
+       m.c_sotype_id laiyuan,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) + SUM(DECODE(B.DOCTYPE, 'INS', QTY)) fhl,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) qh,
+       SUM(DECODE(B.DOCTYPE, 'INS', QTY)) bh,
+       COUNT(DISTINCT M.PROD_CLS_NUM) KS,
+       max(m.e_name) kh
+  FROM B_SO B,
+       B_SOITEM S,
+       product_view_bi M,
+       C_SOTYPE C
+ WHERE B.ID(+) = S.B_SO_ID
+    AND S.M_PRODUCT_ID = M.m_product_id(+)
+    AND B.C_STORE_ID IN (278, 1016)
+    AND M.dhcz_id NOT IN (580, 584,1594,1723,1727)
+    AND B.STATUS = 2
+    AND S.STATUS = 2
+    AND M.ISACTIVE = 'Y'
+    AND M.PROD_SORT_ID = 240
+    and b.billdate BETWEEN 20170101 AND  20190201
+    AND m.year_val='2019'
+ GROUP BY m.year_val,m.season,m.c_sotype_id
+ ORDER BY m.year_val,m.season,m.c_sotype_id [ RunTime:3.482408s ]
+---------------------------------------------------------------
+[ 2019-02-02T10:09:33+08:00 ] 127.0.0.1 GET www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190201
+[运行时间：5.540371s] [吞吐率：0.18req/s] [内存消耗：1,438.17kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000682s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => '451e8e92151e376cddba9a31b9daee4c',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2019',
+  'vJzdate' => '20190201',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.164673s ] oci:dbname=//10.10.1.39/test;charset=utf8
+[ sql ] [ SQL ] SELECT m.year_val nian,
+       m.season ji,
+       m.c_sotype_id laiyuan,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) + SUM(DECODE(B.DOCTYPE, 'INS', QTY)) fhl,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) qh,
+       SUM(DECODE(B.DOCTYPE, 'INS', QTY)) bh,
+       COUNT(DISTINCT M.PROD_CLS_NUM) KS,
+       max(m.e_name) kh
+  FROM B_SO B,
+       B_SOITEM S,
+       product_view_bi M,
+       C_SOTYPE C
+ WHERE B.ID(+) = S.B_SO_ID
+    AND S.M_PRODUCT_ID = M.m_product_id(+)
+    AND B.C_STORE_ID IN (278, 1016)
+    AND M.dhcz_id NOT IN (580, 584,1594,1723,1727)
+    AND B.STATUS = 2
+    AND S.STATUS = 2
+    AND M.ISACTIVE = 'Y'
+    AND M.PROD_SORT_ID = 240
+    and b.billdate BETWEEN 20170101 AND  20190201
+    AND m.year_val='2019'
+ GROUP BY m.year_val,m.season,m.c_sotype_id
+ ORDER BY m.year_val,m.season,m.c_sotype_id [ RunTime:5.321737s ]
+---------------------------------------------------------------
+[ 2019-02-02T10:09:47+08:00 ] 127.0.0.1 GET www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190201
+[运行时间：5.384319s] [吞吐率：0.19req/s] [内存消耗：1,438.17kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000621s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => '451e8e92151e376cddba9a31b9daee4c',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2019',
+  'vJzdate' => '20190201',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.145547s ] oci:dbname=//10.10.1.39/test;charset=utf8
+[ sql ] [ SQL ] SELECT m.year_val nian,
+       m.season ji,
+       m.c_sotype_id laiyuan,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) + SUM(DECODE(B.DOCTYPE, 'INS', QTY)) fhl,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) qh,
+       SUM(DECODE(B.DOCTYPE, 'INS', QTY)) bh,
+       COUNT(DISTINCT M.PROD_CLS_NUM) KS,
+       max(m.e_name) kh
+  FROM B_SO B,
+       B_SOITEM S,
+       product_view_bi M,
+       C_SOTYPE C
+ WHERE B.ID(+) = S.B_SO_ID
+    AND S.M_PRODUCT_ID = M.m_product_id(+)
+    AND B.C_STORE_ID IN (278, 1016)
+    AND M.dhcz_id NOT IN (580, 584,1594,1723,1727)
+    AND B.STATUS = 2
+    AND S.STATUS = 2
+    AND M.ISACTIVE = 'Y'
+    AND M.PROD_SORT_ID = 240
+    and b.billdate BETWEEN 20170101 AND  20190201
+    AND m.year_val='2019'
+ GROUP BY m.year_val,m.season,m.c_sotype_id
+ ORDER BY m.year_val,m.season,m.c_sotype_id [ RunTime:5.192290s ]
+---------------------------------------------------------------
+[ 2019-02-02T10:10:49+08:00 ] 127.0.0.1 GET www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190201
+[运行时间：5.783710s] [吞吐率：0.17req/s] [内存消耗：1,438.17kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000569s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => '451e8e92151e376cddba9a31b9daee4c',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2019',
+  'vJzdate' => '20190201',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.159817s ] oci:dbname=//10.10.1.39/test;charset=utf8
+[ sql ] [ SQL ] SELECT m.year_val nian,
+       m.season ji,
+       m.c_sotype_id laiyuan,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) + SUM(DECODE(B.DOCTYPE, 'INS', QTY)) fhl,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) qh,
+       SUM(DECODE(B.DOCTYPE, 'INS', QTY)) bh,
+       COUNT(DISTINCT M.PROD_CLS_NUM) KS,
+       max(m.e_name) kh
+  FROM B_SO B,
+       B_SOITEM S,
+       product_view_bi M,
+       C_SOTYPE C
+ WHERE B.ID(+) = S.B_SO_ID
+    AND S.M_PRODUCT_ID = M.m_product_id(+)
+    AND B.C_STORE_ID IN (278, 1016)
+    AND M.dhcz_id NOT IN (580, 584,1594,1723,1727)
+    AND B.STATUS = 2
+    AND S.STATUS = 2
+    AND M.ISACTIVE = 'Y'
+    AND M.PROD_SORT_ID = 240
+    and b.billdate BETWEEN 20170101 AND  20190201
+    AND m.year_val='2019'
+ GROUP BY m.year_val,m.season,m.c_sotype_id
+ ORDER BY m.year_val,m.season,m.c_sotype_id [ RunTime:5.589245s ]
+---------------------------------------------------------------
+[ 2019-02-02T10:11:13+08:00 ] 127.0.0.1 GET www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190201
+[运行时间：8.444005s] [吞吐率：0.12req/s] [内存消耗：1,438.17kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000705s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => '451e8e92151e376cddba9a31b9daee4c',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2019',
+  'vJzdate' => '20190201',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.147889s ] oci:dbname=//10.10.1.39/test;charset=utf8
+[ sql ] [ SQL ] SELECT m.year_val nian,
+       m.season ji,
+       m.c_sotype_id laiyuan,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) + SUM(DECODE(B.DOCTYPE, 'INS', QTY)) fhl,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) qh,
+       SUM(DECODE(B.DOCTYPE, 'INS', QTY)) bh,
+       COUNT(DISTINCT M.PROD_CLS_NUM) KS,
+       max(m.e_name) kh
+  FROM B_SO B,
+       B_SOITEM S,
+       product_view_bi M,
+       C_SOTYPE C
+ WHERE B.ID(+) = S.B_SO_ID
+    AND S.M_PRODUCT_ID = M.m_product_id(+)
+    AND B.C_STORE_ID IN (278, 1016)
+    AND M.dhcz_id NOT IN (580, 584,1594,1723,1727)
+    AND B.STATUS = 2
+    AND S.STATUS = 2
+    AND M.ISACTIVE = 'Y'
+    AND M.PROD_SORT_ID = 240
+    and b.billdate BETWEEN 20170101 AND  20190201
+    AND m.year_val='2019'
+ GROUP BY m.year_val,m.season,m.c_sotype_id
+ ORDER BY m.year_val,m.season,m.c_sotype_id [ RunTime:8.246271s ]
+---------------------------------------------------------------
+[ 2019-02-02T12:09:56+08:00 ] 127.0.0.1 GET www.api.com/admin/InterfaceGroup/index?page=1&size=10&type=&keywords=&status=
+[运行时间：0.089506s] [吞吐率：11.17req/s] [内存消耗：1,154.97kb] [文件加载：37]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000586s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT file
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiAuth @ [ RunTime:0.064487s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'response',
+  'response' => 
+  think\response\Json::__set_state(array(
+     'options' => 
+    array (
+      'json_encode_param' => 256,
+    ),
+     'contentType' => 'application/json',
+     'data' => 
+    array (
+      'code' => -14,
+      'msg' => 'ApiAuth不匹配',
+      'data' => 
+      array (
+      ),
+    ),
+     'charset' => 'utf-8',
+     'code' => 200,
+     'header' => 
+    array (
+      'Content-Type' => 'application/json; charset=utf-8',
+      'Access-Control-Allow-Origin' => '*',
+      'Access-Control-Allow-Methods' => 'POST,PUT,GET,DELETE',
+      'Access-Control-Allow-Headers' => 'ApiAuth, User-Agent, Keep-Alive, Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With',
+      'Access-Control-Allow-Credentials' => 'true',
+    ),
+     'content' => NULL,
+  )),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => '451e8e92151e376cddba9a31b9daee4c',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'size' => '10',
+  'type' => '',
+  'keywords' => '',
+  'status' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-02T12:10:02+08:00 ] 127.0.0.1 POST www.api.com/admin/Login/index
+[运行时间：0.892474s] [吞吐率：1.12req/s] [内存消耗：2,357.70kb] [文件加载：58]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000698s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => 'null',
+  'content-length' => '39',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'root',
+  'password' => '123456',
+)
+[ info ] [ CACHE ] INIT file
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.021984s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.175768s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user` [ RunTime:0.105611s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_user` WHERE  `username` = 'root'  AND `password` = '912601e4ad1b308c9ae41877cf6ca754' LIMIT 1 [ RunTime:0.002236s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_data` [ RunTime:0.044939s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_user_data` WHERE  `uid` = '1' LIMIT 1 [ RunTime:0.000762s ]
+[ sql ] [ SQL ] UPDATE `admin_user_data`  SET `loginTimes`=9,`lastLoginTime`=1549080601  WHERE  `id` = 1 [ RunTime:0.084425s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.027242s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `hide` = 0 [ RunTime:0.015218s ]
+---------------------------------------------------------------
+[ 2019-02-02T12:10:05+08:00 ] 127.0.0.1 GET www.api.com/admin/Menu/index
+[运行时间：0.539554s] [吞吐率：1.85req/s] [内存消耗：2,357.16kb] [文件加载：60]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.001028s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT file
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiAuth @ [ RunTime:0.052662s ]
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiPermission @ [ RunTime:0.083185s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\AdminLog @ [ RunTime:0.273500s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Menu',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => 'fdfc7a6fb27dd1fedb8a80c7f1a8dda5',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Menu->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\Menu.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000721s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014245s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.014766s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `url` = 'admin/Menu/index' LIMIT 1 [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_action` [ RunTime:0.035319s ]
+[ sql ] [ SQL ] INSERT INTO `admin_user_action` (`actionName` , `uid` , `nickname` , `addTime` , `url` , `data`) VALUES ('菜单列表' , 1 , 'root' , 1549080605 , 'admin/Menu/index' , '[]') [ RunTime:0.122585s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` ORDER BY `sort` ASC [ RunTime:0.019780s ]
+---------------------------------------------------------------
+[ 2019-02-02T12:10:07+08:00 ] 127.0.0.1 GET www.api.com/admin/User/index?page=1&size=10&type=&keywords=&status=
+[运行时间：0.427035s] [吞吐率：2.34req/s] [内存消耗：2,468.23kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.001589s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT file
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiAuth @ [ RunTime:0.005828s ]
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiPermission @ [ RunTime:0.002667s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\AdminLog @ [ RunTime:0.137575s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'User',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => 'fdfc7a6fb27dd1fedb8a80c7f1a8dda5',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'size' => '10',
+  'type' => '',
+  'keywords' => '',
+  'status' => '',
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\User.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000692s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002090s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.017071s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `url` = 'admin/User/index' LIMIT 1 [ RunTime:0.000659s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_action` [ RunTime:0.031233s ]
+[ sql ] [ SQL ] INSERT INTO `admin_user_action` (`actionName` , `uid` , `nickname` , `addTime` , `url` , `data`) VALUES ('用户列表' , 1 , 'root' , 1549080606 , 'admin/User/index' , '{\"page\":\"1\",\"size\":\"10\",\"type\":\"\",\"keywords\":\"\",\"status\":\"\"}') [ RunTime:0.070704s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user` [ RunTime:0.016936s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `admin_user` LIMIT 1 [ RunTime:0.016268s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_user` ORDER BY `regTime` DESC LIMIT 0,10 [ RunTime:0.000675s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_data` [ RunTime:0.014568s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_user_data` WHERE  `uid` IN ('2','1') [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.014829s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_auth_group_access` WHERE  `uid` IN (2,1) [ RunTime:0.000530s ]
+---------------------------------------------------------------
+[ 2019-02-02T12:10:10+08:00 ] 127.0.0.1 GET www.api.com/admin/Auth/index?page=1&size=10&keywords=&status=
+[运行时间：0.324389s] [吞吐率：3.08req/s] [内存消耗：2,440.91kb] [文件加载：65]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.001306s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT file
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiAuth @ [ RunTime:0.002969s ]
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiPermission @ [ RunTime:0.001570s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\AdminLog @ [ RunTime:0.148362s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Auth',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => 'fdfc7a6fb27dd1fedb8a80c7f1a8dda5',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'size' => '10',
+  'keywords' => '',
+  'status' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Auth->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\Auth.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000658s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000887s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.016348s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `url` = 'admin/Auth/index' LIMIT 1 [ RunTime:0.000659s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_action` [ RunTime:0.014734s ]
+[ sql ] [ SQL ] INSERT INTO `admin_user_action` (`actionName` , `uid` , `nickname` , `addTime` , `url` , `data`) VALUES ('权限列表' , 1 , 'root' , 1549080610 , 'admin/Auth/index' , '{\"page\":\"1\",\"size\":\"10\",\"keywords\":\"\",\"status\":\"\"}') [ RunTime:0.098271s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_auth_group` [ RunTime:0.070935s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `admin_auth_group` WHERE  `name` LIKE '%%' LIMIT 1 [ RunTime:0.000746s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_auth_group` WHERE  `name` LIKE '%%' ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000701s ]
+---------------------------------------------------------------
+[ 2019-02-02T12:10:11+08:00 ] 127.0.0.1 GET www.api.com/admin/Log/index?page=1&size=10&type=&keywords=%7B%22type%22:%22%22,%22keywords%22:%22%22,%22status%22:%22%22%7D
+[运行时间：0.285149s] [吞吐率：3.51req/s] [内存消耗：2,409.75kb] [文件加载：64]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000621s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT file
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiAuth @ [ RunTime:0.002705s ]
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiPermission @ [ RunTime:0.001804s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\AdminLog @ [ RunTime:0.119804s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Log',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => 'fdfc7a6fb27dd1fedb8a80c7f1a8dda5',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'size' => '10',
+  'type' => '',
+  'keywords' => '{"type":"","keywords":"","status":""}',
+)
+[ info ] [ RUN ] app\admin\controller\Log->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\Log.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000736s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010707s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.018504s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `url` = 'admin/Log/index' LIMIT 1 [ RunTime:0.000713s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_action` [ RunTime:0.017062s ]
+[ sql ] [ SQL ] INSERT INTO `admin_user_action` (`actionName` , `uid` , `nickname` , `addTime` , `url` , `data`) VALUES ('获取操作日志列表' , 1 , 'root' , 1549080611 , 'admin/Log/index' , '{\"page\":\"1\",\"size\":\"10\",\"type\":\"\",\"keywords\":\"{\\\"type\\\":\\\"\\\",\\\"keywords\\\":\\\"\\\",\\\"status\\\":\\\"\\\"}\"}') [ RunTime:0.057987s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `admin_user_action` LIMIT 1 [ RunTime:0.009924s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_user_action` ORDER BY `addTime` DESC LIMIT 0,10 [ RunTime:0.024850s ]
+---------------------------------------------------------------
+[ 2019-02-02T12:16:32+08:00 ] 127.0.0.1 GET www.api.com/admin/InterfaceGroup/index?page=1&size=10&type=&keywords=&status=
+[运行时间：0.371698s] [吞吐率：2.69req/s] [内存消耗：2,432.18kb] [文件加载：65]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000466s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT file
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiAuth @ [ RunTime:0.024296s ]
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiPermission @ [ RunTime:0.002391s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\AdminLog @ [ RunTime:0.217311s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'InterfaceGroup',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => 'fdfc7a6fb27dd1fedb8a80c7f1a8dda5',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'size' => '10',
+  'type' => '',
+  'keywords' => '',
+  'status' => '',
+)
+[ info ] [ RUN ] app\admin\controller\InterfaceGroup->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\InterfaceGroup.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000612s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018495s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.012924s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `url` = 'admin/InterfaceGroup/index' LIMIT 1 [ RunTime:0.001532s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_action` [ RunTime:0.028997s ]
+[ sql ] [ SQL ] INSERT INTO `admin_user_action` (`actionName` , `uid` , `nickname` , `addTime` , `url` , `data`) VALUES ('接口分组列表' , 1 , 'root' , 1549080991 , 'admin/InterfaceGroup/index' , '{\"page\":\"1\",\"size\":\"10\",\"type\":\"\",\"keywords\":\"\",\"status\":\"\"}') [ RunTime:0.095839s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_group` [ RunTime:0.030904s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `admin_group` LIMIT 1 [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_group` LIMIT 0,10 [ RunTime:0.000438s ]
+---------------------------------------------------------------
+[ 2019-02-02T12:16:32+08:00 ] 127.0.0.1 GET www.api.com/admin/InterfaceList/index?page=1&size=10&type=&keywords=&status=
+[运行时间：0.228257s] [吞吐率：4.38req/s] [内存消耗：2,441.38kb] [文件加载：65]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000642s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT file
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiAuth @ [ RunTime:0.002419s ]
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiPermission @ [ RunTime:0.001150s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\AdminLog @ [ RunTime:0.162136s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'InterfaceList',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => 'fdfc7a6fb27dd1fedb8a80c7f1a8dda5',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'size' => '10',
+  'type' => '',
+  'keywords' => '',
+  'status' => '',
+)
+[ info ] [ RUN ] app\admin\controller\InterfaceList->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\InterfaceList.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000496s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009943s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.041173s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `url` = 'admin/InterfaceList/index' LIMIT 1 [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_action` [ RunTime:0.013314s ]
+[ sql ] [ SQL ] INSERT INTO `admin_user_action` (`actionName` , `uid` , `nickname` , `addTime` , `url` , `data`) VALUES ('接口列表' , 1 , 'root' , 1549080992 , 'admin/InterfaceList/index' , '{\"page\":\"1\",\"size\":\"10\",\"type\":\"\",\"keywords\":\"\",\"status\":\"\"}') [ RunTime:0.084461s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_list` [ RunTime:0.013238s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `admin_list` LIMIT 1 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_list` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000407s ]
+---------------------------------------------------------------
+[ 2019-02-02T12:16:35+08:00 ] 127.0.0.1 GET www.api.com/admin/AppGroup/index?page=1&size=10&type=&keywords=&status=
+[运行时间：0.341623s] [吞吐率：2.93req/s] [内存消耗：2,425.43kb] [文件加载：65]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000592s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT file
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiAuth @ [ RunTime:0.002845s ]
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiPermission @ [ RunTime:0.001194s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\AdminLog @ [ RunTime:0.163181s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'AppGroup',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => 'fdfc7a6fb27dd1fedb8a80c7f1a8dda5',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'size' => '10',
+  'type' => '',
+  'keywords' => '',
+  'status' => '',
+)
+[ info ] [ RUN ] app\admin\controller\AppGroup->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\AppGroup.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.001271s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008953s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.013335s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `url` = 'admin/AppGroup/index' LIMIT 1 [ RunTime:0.000511s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_action` [ RunTime:0.014610s ]
+[ sql ] [ SQL ] INSERT INTO `admin_user_action` (`actionName` , `uid` , `nickname` , `addTime` , `url` , `data`) VALUES ('应用分组列表' , 1 , 'root' , 1549080994 , 'admin/AppGroup/index' , '{\"page\":\"1\",\"size\":\"10\",\"type\":\"\",\"keywords\":\"\",\"status\":\"\"}') [ RunTime:0.112578s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_app_group` [ RunTime:0.033173s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `admin_app_group` LIMIT 1 [ RunTime:0.018707s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_app_group` LIMIT 0,10 [ RunTime:0.000861s ]
+---------------------------------------------------------------
+[ 2019-02-02T12:16:35+08:00 ] 127.0.0.1 GET www.api.com/admin/App/index?page=1&size=10&type=&keywords=&status=
+[运行时间：0.176823s] [吞吐率：5.66req/s] [内存消耗：2,436.55kb] [文件加载：65]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000504s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT file
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiAuth @ [ RunTime:0.002932s ]
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiPermission @ [ RunTime:0.001303s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\AdminLog @ [ RunTime:0.093585s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'App',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => 'fdfc7a6fb27dd1fedb8a80c7f1a8dda5',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'size' => '10',
+  'type' => '',
+  'keywords' => '',
+  'status' => '',
+)
+[ info ] [ RUN ] app\admin\controller\App->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\App.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000488s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000859s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.013518s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `url` = 'admin/App/index' LIMIT 1 [ RunTime:0.000525s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_action` [ RunTime:0.014403s ]
+[ sql ] [ SQL ] INSERT INTO `admin_user_action` (`actionName` , `uid` , `nickname` , `addTime` , `url` , `data`) VALUES ('应用列表' , 1 , 'root' , 1549080995 , 'admin/App/index' , '{\"page\":\"1\",\"size\":\"10\",\"type\":\"\",\"keywords\":\"\",\"status\":\"\"}') [ RunTime:0.050699s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_app` [ RunTime:0.012942s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `admin_app` LIMIT 1 [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_app` ORDER BY `app_addTime` DESC LIMIT 0,10 [ RunTime:0.000564s ]
+---------------------------------------------------------------
+[ 2019-02-02T13:15:18+08:00 ] 127.0.0.1 GET www.api.com/bi/5c527fc326ead?vYear=2013&vJzdate=20190216
+[运行时间：21.229367s] [吞吐率：0.05req/s] [内存消耗：1,452.70kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000495s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => 'fdfc7a6fb27dd1fedb8a80c7f1a8dda5',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2013',
+  'vJzdate' => '20190216',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ LOG ] INIT File
+[ error ] [12170]SQLSTATE[HY000]: pdo_oci_handle_factory: ORA-12170: TNS:Connect timeout occurred
+ (ext\pdo_oci\oci_driver.c:634)[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\library\think\db\Connection.php:295]
+---------------------------------------------------------------
+[ 2019-02-02T13:15:47+08:00 ] 127.0.0.1 GET www.api.com/bi/5c527fc326ead?vYear=2017&vJzdate=20190216
+[运行时间：21.149973s] [吞吐率：0.05req/s] [内存消耗：1,452.70kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.001216s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => 'fdfc7a6fb27dd1fedb8a80c7f1a8dda5',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2017',
+  'vJzdate' => '20190216',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ LOG ] INIT File
+[ error ] [12170]SQLSTATE[HY000]: pdo_oci_handle_factory: ORA-12170: TNS:Connect timeout occurred
+ (ext\pdo_oci\oci_driver.c:634)[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\library\think\db\Connection.php:295]
+---------------------------------------------------------------
+[ 2019-02-02T13:16:08+08:00 ] 127.0.0.1 GET www.api.com/bi/5c527fc326ead?vYear=2017&vJzdate=20190216
+[运行时间：21.152340s] [吞吐率：0.05req/s] [内存消耗：1,452.45kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000833s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=u9sfuiqvva4ed61njs8el6s1uu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2017',
+  'vJzdate' => '20190216',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ LOG ] INIT File
+[ error ] [12170]SQLSTATE[HY000]: pdo_oci_handle_factory: ORA-12170: TNS:Connect timeout occurred
+ (ext\pdo_oci\oci_driver.c:634)[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\library\think\db\Connection.php:295]
+---------------------------------------------------------------
+[ 2019-02-02T13:16:16+08:00 ] 127.0.0.1 GET www.api.com/bi/5c527fc326ead?vYear=2018&vJzdate=20190216
+[运行时间：21.186440s] [吞吐率：0.05req/s] [内存消耗：1,452.70kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000566s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => 'fdfc7a6fb27dd1fedb8a80c7f1a8dda5',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2018',
+  'vJzdate' => '20190216',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ LOG ] INIT File
+[ error ] [12170]SQLSTATE[HY000]: pdo_oci_handle_factory: ORA-12170: TNS:Connect timeout occurred
+ (ext\pdo_oci\oci_driver.c:634)[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\library\think\db\Connection.php:295]
+---------------------------------------------------------------
+[ 2019-02-02T13:16:37+08:00 ] 127.0.0.1 GET www.api.com/bi/5c527fc326ead?vYear=2018&vJzdate=20190216
+[运行时间：2.427633s] [吞吐率：0.41req/s] [内存消耗：1,438.17kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000635s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => 'fdfc7a6fb27dd1fedb8a80c7f1a8dda5',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2018',
+  'vJzdate' => '20190216',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.164210s ] oci:dbname=//10.10.1.39/test;charset=utf8
+[ sql ] [ SQL ] SELECT m.year_val nian,
+       m.season ji,
+       m.c_sotype_id laiyuan,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) + SUM(DECODE(B.DOCTYPE, 'INS', QTY)) fhl,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) qh,
+       SUM(DECODE(B.DOCTYPE, 'INS', QTY)) bh,
+       COUNT(DISTINCT M.PROD_CLS_NUM) KS,
+       max(m.e_name) kh
+  FROM B_SO B,
+       B_SOITEM S,
+       product_view_bi M,
+       C_SOTYPE C
+ WHERE B.ID(+) = S.B_SO_ID
+    AND S.M_PRODUCT_ID = M.m_product_id(+)
+    AND B.C_STORE_ID IN (278, 1016)
+    AND M.dhcz_id NOT IN (580, 584,1594,1723,1727)
+    AND B.STATUS = 2
+    AND S.STATUS = 2
+    AND M.ISACTIVE = 'Y'
+    AND M.PROD_SORT_ID = 240
+    and b.billdate BETWEEN 20170101 AND  20190216
+    AND m.year_val='2018'
+ GROUP BY m.year_val,m.season,m.c_sotype_id
+ ORDER BY m.year_val,m.season,m.c_sotype_id [ RunTime:2.222208s ]
+---------------------------------------------------------------
+[ 2019-02-02T13:21:15+08:00 ] 127.0.0.1 GET www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190201
+[运行时间：1.760797s] [吞吐率：0.57req/s] [内存消耗：1,438.17kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.001214s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => 'fdfc7a6fb27dd1fedb8a80c7f1a8dda5',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2019',
+  'vJzdate' => '20190201',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.172007s ] oci:dbname=//10.10.1.39/test;charset=utf8
+[ sql ] [ SQL ] SELECT m.year_val nian,
+       m.season ji,
+       m.c_sotype_id laiyuan,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) + SUM(DECODE(B.DOCTYPE, 'INS', QTY)) fhl,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) qh,
+       SUM(DECODE(B.DOCTYPE, 'INS', QTY)) bh,
+       COUNT(DISTINCT M.PROD_CLS_NUM) KS,
+       max(m.e_name) kh
+  FROM B_SO B,
+       B_SOITEM S,
+       product_view_bi M,
+       C_SOTYPE C
+ WHERE B.ID(+) = S.B_SO_ID
+    AND S.M_PRODUCT_ID = M.m_product_id(+)
+    AND B.C_STORE_ID IN (278, 1016)
+    AND M.dhcz_id NOT IN (580, 584,1594,1723,1727)
+    AND B.STATUS = 2
+    AND S.STATUS = 2
+    AND M.ISACTIVE = 'Y'
+    AND M.PROD_SORT_ID = 240
+    and b.billdate BETWEEN 20170101 AND  20190201
+    AND m.year_val='2019'
+ GROUP BY m.year_val,m.season,m.c_sotype_id
+ ORDER BY m.year_val,m.season,m.c_sotype_id [ RunTime:1.504164s ]
+---------------------------------------------------------------
+[ 2019-02-02T13:22:55+08:00 ] 127.0.0.1 GET www.api.com/bi/5c527fc326ead?vYear=2017&vJzdate=20190201
+[运行时间：2.467275s] [吞吐率：0.41req/s] [内存消耗：1,438.17kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000526s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => 'fdfc7a6fb27dd1fedb8a80c7f1a8dda5',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2017',
+  'vJzdate' => '20190201',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.138669s ] oci:dbname=//10.10.1.39/test;charset=utf8
+[ sql ] [ SQL ] SELECT m.year_val nian,
+       m.season ji,
+       m.c_sotype_id laiyuan,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) + SUM(DECODE(B.DOCTYPE, 'INS', QTY)) fhl,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) qh,
+       SUM(DECODE(B.DOCTYPE, 'INS', QTY)) bh,
+       COUNT(DISTINCT M.PROD_CLS_NUM) KS,
+       max(m.e_name) kh
+  FROM B_SO B,
+       B_SOITEM S,
+       product_view_bi M,
+       C_SOTYPE C
+ WHERE B.ID(+) = S.B_SO_ID
+    AND S.M_PRODUCT_ID = M.m_product_id(+)
+    AND B.C_STORE_ID IN (278, 1016)
+    AND M.dhcz_id NOT IN (580, 584,1594,1723,1727)
+    AND B.STATUS = 2
+    AND S.STATUS = 2
+    AND M.ISACTIVE = 'Y'
+    AND M.PROD_SORT_ID = 240
+    and b.billdate BETWEEN 20170101 AND  20190201
+    AND m.year_val='2017'
+ GROUP BY m.year_val,m.season,m.c_sotype_id
+ ORDER BY m.year_val,m.season,m.c_sotype_id [ RunTime:2.293229s ]
+---------------------------------------------------------------
+[ 2019-02-02T13:23:57+08:00 ] 127.0.0.1 GET www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190201
+[运行时间：1.757228s] [吞吐率：0.57req/s] [内存消耗：1,438.17kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000488s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => 'fdfc7a6fb27dd1fedb8a80c7f1a8dda5',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2019',
+  'vJzdate' => '20190201',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.142044s ] oci:dbname=//10.10.1.39/test;charset=utf8
+[ sql ] [ SQL ] SELECT m.year_val nian,
+       m.season ji,
+       m.c_sotype_id laiyuan,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) + SUM(DECODE(B.DOCTYPE, 'INS', QTY)) fhl,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) qh,
+       SUM(DECODE(B.DOCTYPE, 'INS', QTY)) bh,
+       COUNT(DISTINCT M.PROD_CLS_NUM) KS,
+       max(m.e_name) kh
+  FROM B_SO B,
+       B_SOITEM S,
+       product_view_bi M,
+       C_SOTYPE C
+ WHERE B.ID(+) = S.B_SO_ID
+    AND S.M_PRODUCT_ID = M.m_product_id(+)
+    AND B.C_STORE_ID IN (278, 1016)
+    AND M.dhcz_id NOT IN (580, 584,1594,1723,1727)
+    AND B.STATUS = 2
+    AND S.STATUS = 2
+    AND M.ISACTIVE = 'Y'
+    AND M.PROD_SORT_ID = 240
+    and b.billdate BETWEEN 20170101 AND  20190201
+    AND m.year_val='2019'
+ GROUP BY m.year_val,m.season,m.c_sotype_id
+ ORDER BY m.year_val,m.season,m.c_sotype_id [ RunTime:1.577366s ]
+---------------------------------------------------------------
+[ 2019-02-02T13:26:14+08:00 ] 127.0.0.1 GET www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190201
+[运行时间：1.757770s] [吞吐率：0.57req/s] [内存消耗：1,438.17kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000526s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => 'fdfc7a6fb27dd1fedb8a80c7f1a8dda5',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2019',
+  'vJzdate' => '20190201',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.195202s ] oci:dbname=//10.10.1.39/test;charset=utf8
+[ sql ] [ SQL ] SELECT m.year_val nian,
+       m.season ji,
+       m.c_sotype_id laiyuan,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) + SUM(DECODE(B.DOCTYPE, 'INS', QTY)) fhl,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) qh,
+       SUM(DECODE(B.DOCTYPE, 'INS', QTY)) bh,
+       COUNT(DISTINCT M.PROD_CLS_NUM) KS,
+       max(m.e_name) kh
+  FROM B_SO B,
+       B_SOITEM S,
+       product_view_bi M,
+       C_SOTYPE C
+ WHERE B.ID(+) = S.B_SO_ID
+    AND S.M_PRODUCT_ID = M.m_product_id(+)
+    AND B.C_STORE_ID IN (278, 1016)
+    AND M.dhcz_id NOT IN (580, 584,1594,1723,1727)
+    AND B.STATUS = 2
+    AND S.STATUS = 2
+    AND M.ISACTIVE = 'Y'
+    AND M.PROD_SORT_ID = 240
+    and b.billdate BETWEEN 20170101 AND  20190201
+    AND m.year_val='2019'
+ GROUP BY m.year_val,m.season,m.c_sotype_id
+ ORDER BY m.year_val,m.season,m.c_sotype_id [ RunTime:1.509256s ]
+---------------------------------------------------------------
+[ 2019-02-02T13:26:17+08:00 ] 127.0.0.1 GET www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190201
+[运行时间：1.740987s] [吞吐率：0.57req/s] [内存消耗：1,437.92kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000491s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=u9sfuiqvva4ed61njs8el6s1uu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2019',
+  'vJzdate' => '20190201',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.146461s ] oci:dbname=//10.10.1.39/test;charset=utf8
+[ sql ] [ SQL ] SELECT m.year_val nian,
+       m.season ji,
+       m.c_sotype_id laiyuan,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) + SUM(DECODE(B.DOCTYPE, 'INS', QTY)) fhl,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) qh,
+       SUM(DECODE(B.DOCTYPE, 'INS', QTY)) bh,
+       COUNT(DISTINCT M.PROD_CLS_NUM) KS,
+       max(m.e_name) kh
+  FROM B_SO B,
+       B_SOITEM S,
+       product_view_bi M,
+       C_SOTYPE C
+ WHERE B.ID(+) = S.B_SO_ID
+    AND S.M_PRODUCT_ID = M.m_product_id(+)
+    AND B.C_STORE_ID IN (278, 1016)
+    AND M.dhcz_id NOT IN (580, 584,1594,1723,1727)
+    AND B.STATUS = 2
+    AND S.STATUS = 2
+    AND M.ISACTIVE = 'Y'
+    AND M.PROD_SORT_ID = 240
+    and b.billdate BETWEEN 20170101 AND  20190201
+    AND m.year_val='2019'
+ GROUP BY m.year_val,m.season,m.c_sotype_id
+ ORDER BY m.year_val,m.season,m.c_sotype_id [ RunTime:1.548207s ]
+---------------------------------------------------------------
+[ 2019-02-02T13:26:23+08:00 ] 127.0.0.1 GET www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190201
+[运行时间：1.834416s] [吞吐率：0.55req/s] [内存消耗：1,437.92kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000541s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=u9sfuiqvva4ed61njs8el6s1uu',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2019',
+  'vJzdate' => '20190201',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.164220s ] oci:dbname=//10.10.1.39/test;charset=utf8
+[ sql ] [ SQL ] SELECT m.year_val nian,
+       m.season ji,
+       m.c_sotype_id laiyuan,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) + SUM(DECODE(B.DOCTYPE, 'INS', QTY)) fhl,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) qh,
+       SUM(DECODE(B.DOCTYPE, 'INS', QTY)) bh,
+       COUNT(DISTINCT M.PROD_CLS_NUM) KS,
+       max(m.e_name) kh
+  FROM B_SO B,
+       B_SOITEM S,
+       product_view_bi M,
+       C_SOTYPE C
+ WHERE B.ID(+) = S.B_SO_ID
+    AND S.M_PRODUCT_ID = M.m_product_id(+)
+    AND B.C_STORE_ID IN (278, 1016)
+    AND M.dhcz_id NOT IN (580, 584,1594,1723,1727)
+    AND B.STATUS = 2
+    AND S.STATUS = 2
+    AND M.ISACTIVE = 'Y'
+    AND M.PROD_SORT_ID = 240
+    and b.billdate BETWEEN 20170101 AND  20190201
+    AND m.year_val='2019'
+ GROUP BY m.year_val,m.season,m.c_sotype_id
+ ORDER BY m.year_val,m.season,m.c_sotype_id [ RunTime:1.619490s ]
+---------------------------------------------------------------
+[ 2019-02-02T13:28:34+08:00 ] 127.0.0.1 GET www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190201
+[运行时间：1.778478s] [吞吐率：0.56req/s] [内存消耗：1,438.17kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000492s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => 'fdfc7a6fb27dd1fedb8a80c7f1a8dda5',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2019',
+  'vJzdate' => '20190201',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.155537s ] oci:dbname=//10.10.1.39/test;charset=utf8
+[ sql ] [ SQL ] SELECT m.year_val nian,
+       m.season ji,
+       m.c_sotype_id laiyuan,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) + SUM(DECODE(B.DOCTYPE, 'INS', QTY)) fhl,
+       SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) qh,
+       SUM(DECODE(B.DOCTYPE, 'INS', QTY)) bh,
+       COUNT(DISTINCT M.PROD_CLS_NUM) KS,
+       max(m.e_name) kh
+  FROM B_SO B,
+       B_SOITEM S,
+       product_view_bi M,
+       C_SOTYPE C
+ WHERE B.ID(+) = S.B_SO_ID
+    AND S.M_PRODUCT_ID = M.m_product_id(+)
+    AND B.C_STORE_ID IN (278, 1016)
+    AND M.dhcz_id NOT IN (580, 584,1594,1723,1727)
+    AND B.STATUS = 2
+    AND S.STATUS = 2
+    AND M.ISACTIVE = 'Y'
+    AND M.PROD_SORT_ID = 240
+    and b.billdate BETWEEN 20170101 AND  20190201
+    AND m.year_val='2019'
+ GROUP BY m.year_val,m.season,m.c_sotype_id
+ ORDER BY m.year_val,m.season,m.c_sotype_id [ RunTime:1.579546s ]
+---------------------------------------------------------------
+[ 2019-02-02T13:34:53+08:00 ] 127.0.0.1 GET www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190201
+[运行时间：1.920574s] [吞吐率：0.52req/s] [内存消耗：1,444.16kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000506s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => 'fdfc7a6fb27dd1fedb8a80c7f1a8dda5',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2019',
+  'vJzdate' => '20190201',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.149597s ] oci:dbname=//10.10.1.39/test;charset=utf8
+[ sql ] [ SQL ] SELECT m.year_val nian,
+                                    decode(m.C_SOTYPE_ID,1,m.season||'季外购',m.season||'季本厂') ji,
+                                   m.c_sotype_id laiyuan,
+                                   SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) + SUM(DECODE(B.DOCTYPE, 'INS', QTY)) fhl,
+                                   SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) qh,
+                                   SUM(DECODE(B.DOCTYPE, 'INS', QTY)) bh,
+                                   COUNT(DISTINCT M.PROD_CLS_NUM) KS,
+                                   max(m.e_name) kh
+                              FROM B_SO B,
+                                   B_SOITEM S,
+                                   product_view_bi M,
+                                   C_SOTYPE C
+                             WHERE B.ID(+) = S.B_SO_ID
+                                AND S.M_PRODUCT_ID = M.m_product_id(+)
+                                AND B.C_STORE_ID IN (278, 1016)
+                                AND M.dhcz_id NOT IN (580, 584,1594,1723,1727)
+                                AND B.STATUS = 2
+                                AND S.STATUS = 2
+                                AND M.ISACTIVE = 'Y'
+                                AND M.PROD_SORT_ID = 240
+                                and b.billdate BETWEEN 20170101 AND  20190201
+                                AND m.year_val='2019'
+                             GROUP BY m.year_val,m.season,m.c_sotype_id
+                             ORDER BY m.year_val,m.season,m.c_sotype_id [ RunTime:1.722057s ]
+---------------------------------------------------------------
+[ 2019-02-02T13:43:04+08:00 ] 127.0.0.1 GET www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190201
+[运行时间：3.995545s] [吞吐率：0.25req/s] [内存消耗：1,444.56kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000484s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => 'fdfc7a6fb27dd1fedb8a80c7f1a8dda5',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2019',
+  'vJzdate' => '20190201',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.167587s ] oci:dbname=//10.10.1.39/test;charset=utf8
+[ sql ] [ SQL ] SELECT m.year_val nian,
+       m.season,
+                                    decode(m.C_SOTYPE_ID,1,m.season||'季外购',m.season||'季本厂') ji,
+                                   m.c_sotype_id laiyuan,
+                                   SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) + SUM(DECODE(B.DOCTYPE, 'INS', QTY)) fhl,
+                                   SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) qh,
+                                   SUM(DECODE(B.DOCTYPE, 'INS', QTY)) bh,
+                                   COUNT(DISTINCT M.PROD_CLS_NUM) KS,
+                                   max(m.e_name) kh
+                              FROM B_SO B,
+                                   B_SOITEM S,
+                                   product_view_bi M,
+                                   C_SOTYPE C
+                             WHERE B.ID(+) = S.B_SO_ID
+                                AND S.M_PRODUCT_ID = M.m_product_id(+)
+                                AND B.C_STORE_ID IN (278, 1016)
+                                AND M.dhcz_id NOT IN (580, 584,1594,1723,1727)
+                                AND B.STATUS = 2
+                                AND S.STATUS = 2
+                                AND M.ISACTIVE = 'Y'
+                                AND M.PROD_SORT_ID = 240
+                                and b.billdate BETWEEN 20170101 AND  20190201
+                                AND m.year_val='2019'
+                             GROUP BY m.year_val,m.season,m.c_sotype_id
+                             ORDER BY m.year_val,m.season,m.c_sotype_id [ RunTime:3.778225s ]
+---------------------------------------------------------------
+[ 2019-02-02T13:54:17+08:00 ] 127.0.0.1 GET www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190201
+[运行时间：2.052461s] [吞吐率：0.49req/s] [内存消耗：1,445.25kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000558s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => 'fdfc7a6fb27dd1fedb8a80c7f1a8dda5',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2019',
+  'vJzdate' => '20190201',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.174820s ] oci:dbname=//10.10.1.39/test;charset=utf8
+[ sql ] [ SQL ] SELECT m.year_val nian,
+       m.season,
+       m.season_id,
+                                    decode(m.C_SOTYPE_ID,1,m.season||'季外购',m.season||'季本厂') ji,
+                                   m.c_sotype_id laiyuan,
+                                   SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) + SUM(DECODE(B.DOCTYPE, 'INS', QTY)) fhl,
+                                   SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) qh,
+                                   SUM(DECODE(B.DOCTYPE, 'INS', QTY)) bh,
+                                   COUNT(DISTINCT M.PROD_CLS_NUM) KS,
+                                   max(m.e_name) kh
+                              FROM B_SO B,
+                                   B_SOITEM S,
+                                   product_view_bi M,
+                                   C_SOTYPE C
+                             WHERE B.ID(+) = S.B_SO_ID
+                                AND S.M_PRODUCT_ID = M.m_product_id(+)
+                                AND B.C_STORE_ID IN (278, 1016)
+                                AND M.dhcz_id NOT IN (580, 584,1594,1723,1727)
+                                AND B.STATUS = 2
+                                AND S.STATUS = 2
+                                AND M.ISACTIVE = 'Y'
+                                AND M.PROD_SORT_ID = 240
+                                and b.billdate BETWEEN 20170101 AND  20190201
+                                AND m.year_val='2019'
+                             GROUP BY m.year_val,m.season,m.season_id,m.c_sotype_id
+                             ORDER BY m.year_val,m.season,m.season_id,m.c_sotype_id [ RunTime:1.826874s ]
+---------------------------------------------------------------
+[ 2019-02-02T13:55:24+08:00 ] 127.0.0.1 GET www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190201
+[运行时间：2.366355s] [吞吐率：0.42req/s] [内存消耗：1,445.25kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000476s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => 'fdfc7a6fb27dd1fedb8a80c7f1a8dda5',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2019',
+  'vJzdate' => '20190201',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.134699s ] oci:dbname=//10.10.1.39/test;charset=utf8
+[ sql ] [ SQL ] SELECT m.year_val nian,
+       m.season,
+       m.season_id,
+                                    decode(m.C_SOTYPE_ID,1,m.season||'季外购',m.season||'季本厂') ji,
+                                   m.c_sotype_id laiyuan,
+                                   SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) + SUM(DECODE(B.DOCTYPE, 'INS', QTY)) fhl,
+                                   SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) qh,
+                                   SUM(DECODE(B.DOCTYPE, 'INS', QTY)) bh,
+                                   COUNT(DISTINCT M.PROD_CLS_NUM) KS,
+                                   max(m.e_name) kh
+                              FROM B_SO B,
+                                   B_SOITEM S,
+                                   product_view_bi M,
+                                   C_SOTYPE C
+                             WHERE B.ID(+) = S.B_SO_ID
+                                AND S.M_PRODUCT_ID = M.m_product_id(+)
+                                AND B.C_STORE_ID IN (278, 1016)
+                                AND M.dhcz_id NOT IN (580, 584,1594,1723,1727)
+                                AND B.STATUS = 2
+                                AND S.STATUS = 2
+                                AND M.ISACTIVE = 'Y'
+                                AND M.PROD_SORT_ID = 240
+                                and b.billdate BETWEEN 20170101 AND  20190201
+                                AND m.year_val='2019'
+                             GROUP BY m.year_val,m.season,m.season_id,m.c_sotype_id
+                             ORDER BY m.year_val,m.season,m.season_id,m.c_sotype_id [ RunTime:2.190621s ]
+---------------------------------------------------------------
+[ 2019-02-02T13:55:48+08:00 ] 127.0.0.1 GET www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190201
+[运行时间：1.827893s] [吞吐率：0.55req/s] [内存消耗：1,445.25kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000572s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => 'fdfc7a6fb27dd1fedb8a80c7f1a8dda5',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2019',
+  'vJzdate' => '20190201',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.179241s ] oci:dbname=//10.10.1.39/test;charset=utf8
+[ sql ] [ SQL ] SELECT m.year_val nian,
+       m.season,
+       m.season_id,
+                                    decode(m.C_SOTYPE_ID,1,m.season||'季外购',m.season||'季本厂') ji,
+                                   m.c_sotype_id laiyuan,
+                                   SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) + SUM(DECODE(B.DOCTYPE, 'INS', QTY)) fhl,
+                                   SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) qh,
+                                   SUM(DECODE(B.DOCTYPE, 'INS', QTY)) bh,
+                                   COUNT(DISTINCT M.PROD_CLS_NUM) KS,
+                                   max(m.e_name) kh
+                              FROM B_SO B,
+                                   B_SOITEM S,
+                                   product_view_bi M,
+                                   C_SOTYPE C
+                             WHERE B.ID(+) = S.B_SO_ID
+                                AND S.M_PRODUCT_ID = M.m_product_id(+)
+                                AND B.C_STORE_ID IN (278, 1016)
+                                AND M.dhcz_id NOT IN (580, 584,1594,1723,1727)
+                                AND B.STATUS = 2
+                                AND S.STATUS = 2
+                                AND M.ISACTIVE = 'Y'
+                                AND M.PROD_SORT_ID = 240
+                                and b.billdate BETWEEN 20170101 AND  20190201
+                                AND m.year_val='2019'
+                             GROUP BY m.year_val,m.season,m.season_id,m.c_sotype_id
+                             ORDER BY m.year_val,m.season,m.season_id,m.c_sotype_id [ RunTime:1.608718s ]
+---------------------------------------------------------------
+[ 2019-02-02T14:08:14+08:00 ] 127.0.0.1 GET www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190201
+[运行时间：2.968784s] [吞吐率：0.34req/s] [内存消耗：1,445.25kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000474s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => 'fdfc7a6fb27dd1fedb8a80c7f1a8dda5',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2019',
+  'vJzdate' => '20190201',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.267573s ] oci:dbname=//10.10.1.39/test;charset=utf8
+[ sql ] [ SQL ] SELECT m.year_val nian,
+       m.season,
+       m.season_id,
+                                    decode(m.C_SOTYPE_ID,1,m.season||'季外购',m.season||'季本厂') ji,
+                                   m.c_sotype_id laiyuan,
+                                   SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) + SUM(DECODE(B.DOCTYPE, 'INS', QTY)) fhl,
+                                   SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) qh,
+                                   SUM(DECODE(B.DOCTYPE, 'INS', QTY)) bh,
+                                   COUNT(DISTINCT M.PROD_CLS_NUM) KS,
+                                   max(m.e_name) kh
+                              FROM B_SO B,
+                                   B_SOITEM S,
+                                   product_view_bi M,
+                                   C_SOTYPE C
+                             WHERE B.ID(+) = S.B_SO_ID
+                                AND S.M_PRODUCT_ID = M.m_product_id(+)
+                                AND B.C_STORE_ID IN (278, 1016)
+                                AND M.dhcz_id NOT IN (580, 584,1594,1723,1727)
+                                AND B.STATUS = 2
+                                AND S.STATUS = 2
+                                AND M.ISACTIVE = 'Y'
+                                AND M.PROD_SORT_ID = 240
+                                and b.billdate BETWEEN 20170101 AND  20190201
+                                AND m.year_val='2019'
+                             GROUP BY m.year_val,m.season,m.season_id,m.c_sotype_id
+                             ORDER BY m.year_val,m.season,m.season_id,m.c_sotype_id [ RunTime:2.664652s ]
+---------------------------------------------------------------
+[ 2019-02-02T14:08:49+08:00 ] 127.0.0.1 GET www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190201
+[运行时间：4.313282s] [吞吐率：0.23req/s] [内存消耗：1,445.25kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000652s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => 'fdfc7a6fb27dd1fedb8a80c7f1a8dda5',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2019',
+  'vJzdate' => '20190201',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.152489s ] oci:dbname=//10.10.1.39/test;charset=utf8
+[ sql ] [ SQL ] SELECT m.year_val nian,
+       m.season,
+       m.season_id,
+                                    decode(m.C_SOTYPE_ID,1,m.season||'季外购',m.season||'季本厂') ji,
+                                   m.c_sotype_id laiyuan,
+                                   SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) + SUM(DECODE(B.DOCTYPE, 'INS', QTY)) fhl,
+                                   SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) qh,
+                                   SUM(DECODE(B.DOCTYPE, 'INS', QTY)) bh,
+                                   COUNT(DISTINCT M.PROD_CLS_NUM) KS,
+                                   max(m.e_name) kh
+                              FROM B_SO B,
+                                   B_SOITEM S,
+                                   product_view_bi M,
+                                   C_SOTYPE C
+                             WHERE B.ID(+) = S.B_SO_ID
+                                AND S.M_PRODUCT_ID = M.m_product_id(+)
+                                AND B.C_STORE_ID IN (278, 1016)
+                                AND M.dhcz_id NOT IN (580, 584,1594,1723,1727)
+                                AND B.STATUS = 2
+                                AND S.STATUS = 2
+                                AND M.ISACTIVE = 'Y'
+                                AND M.PROD_SORT_ID = 240
+                                and b.billdate BETWEEN 20170101 AND  20190201
+                                AND m.year_val='2019'
+                             GROUP BY m.year_val,m.season,m.season_id,m.c_sotype_id
+                             ORDER BY m.year_val,m.season,m.season_id,m.c_sotype_id [ RunTime:4.113924s ]
+---------------------------------------------------------------
+[ 2019-02-02T14:09:35+08:00 ] 127.0.0.1 GET www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190201
+[运行时间：3.877018s] [吞吐率：0.26req/s] [内存消耗：1,445.25kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000504s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => 'fdfc7a6fb27dd1fedb8a80c7f1a8dda5',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2019',
+  'vJzdate' => '20190201',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.187290s ] oci:dbname=//10.10.1.39/test;charset=utf8
+[ sql ] [ SQL ] SELECT m.year_val nian,
+       m.season,
+       m.season_id,
+                                    decode(m.C_SOTYPE_ID,1,m.season||'季外购',m.season||'季本厂') ji,
+                                   m.c_sotype_id laiyuan,
+                                   SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) + SUM(DECODE(B.DOCTYPE, 'INS', QTY)) fhl,
+                                   SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) qh,
+                                   SUM(DECODE(B.DOCTYPE, 'INS', QTY)) bh,
+                                   COUNT(DISTINCT M.PROD_CLS_NUM) KS,
+                                   max(m.e_name) kh
+                              FROM B_SO B,
+                                   B_SOITEM S,
+                                   product_view_bi M,
+                                   C_SOTYPE C
+                             WHERE B.ID(+) = S.B_SO_ID
+                                AND S.M_PRODUCT_ID = M.m_product_id(+)
+                                AND B.C_STORE_ID IN (278, 1016)
+                                AND M.dhcz_id NOT IN (580, 584,1594,1723,1727)
+                                AND B.STATUS = 2
+                                AND S.STATUS = 2
+                                AND M.ISACTIVE = 'Y'
+                                AND M.PROD_SORT_ID = 240
+                                and b.billdate BETWEEN 20170101 AND  20190201
+                                AND m.year_val='2019'
+                             GROUP BY m.year_val,m.season,m.season_id,m.c_sotype_id
+                             ORDER BY m.year_val,m.season,m.season_id,m.c_sotype_id [ RunTime:3.649189s ]
+---------------------------------------------------------------
+[ 2019-02-02T14:11:41+08:00 ] 127.0.0.1 GET www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190201
+[运行时间：1.889205s] [吞吐率：0.53req/s] [内存消耗：1,445.25kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000643s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'apiauth' => 'fdfc7a6fb27dd1fedb8a80c7f1a8dda5',
+  'connection' => 'close',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2019',
+  'vJzdate' => '20190201',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.137975s ] oci:dbname=//10.10.1.39/test;charset=utf8
+[ sql ] [ SQL ] SELECT m.year_val nian,
+       m.season,
+       m.season_id,
+                                    decode(m.C_SOTYPE_ID,1,m.season||'季外购',m.season||'季本厂') ji,
+                                   m.c_sotype_id laiyuan,
+                                   SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) + SUM(DECODE(B.DOCTYPE, 'INS', QTY)) fhl,
+                                   SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) qh,
+                                   SUM(DECODE(B.DOCTYPE, 'INS', QTY)) bh,
+                                   COUNT(DISTINCT M.PROD_CLS_NUM) KS,
+                                   max(m.e_name) kh
+                              FROM B_SO B,
+                                   B_SOITEM S,
+                                   product_view_bi M,
+                                   C_SOTYPE C
+                             WHERE B.ID(+) = S.B_SO_ID
+                                AND S.M_PRODUCT_ID = M.m_product_id(+)
+                                AND B.C_STORE_ID IN (278, 1016)
+                                AND M.dhcz_id NOT IN (580, 584,1594,1723,1727)
+                                AND B.STATUS = 2
+                                AND S.STATUS = 2
+                                AND M.ISACTIVE = 'Y'
+                                AND M.PROD_SORT_ID = 240
+                                and b.billdate BETWEEN 20170101 AND  20190201
+                                AND m.year_val='2019'
+                             GROUP BY m.year_val,m.season,m.season_id,m.c_sotype_id
+                             ORDER BY m.year_val,m.season,m.season_id,m.c_sotype_id [ RunTime:1.711653s ]

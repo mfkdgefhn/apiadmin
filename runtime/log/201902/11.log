@@ -1,0 +1,2304 @@
+---------------------------------------------------------------
+[ 2019-02-11T10:07:16+08:00 ] 127.0.0.1 GET www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190209
+[运行时间：21.233559s] [吞吐率：0.05req/s] [内存消耗：1,453.77kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000632s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'http://localhost:8080',
+  'apiauth' => '822f48ee2e440aa4f681880c067f1518',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2019',
+  'vJzdate' => '20190209',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ LOG ] INIT File
+[ error ] [12170]SQLSTATE[HY000]: pdo_oci_handle_factory: ORA-12170: TNS:Connect timeout occurred
+ (ext\pdo_oci\oci_driver.c:634)[D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\library\think\db\Connection.php:295]
+---------------------------------------------------------------
+[ 2019-02-11T10:07:21+08:00 ] 127.0.0.1 GET www.api.com/admin/InterfaceList/index?page=1&size=10&type=&keywords=&status=
+[运行时间：0.025223s] [吞吐率：39.65req/s] [内存消耗：1,154.92kb] [文件加载：37]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000445s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT file
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiAuth @ [ RunTime:0.005740s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'response',
+  'response' => 
+  think\response\Json::__set_state(array(
+     'options' => 
+    array (
+      'json_encode_param' => 256,
+    ),
+     'contentType' => 'application/json',
+     'data' => 
+    array (
+      'code' => -14,
+      'msg' => 'ApiAuth不匹配',
+      'data' => 
+      array (
+      ),
+    ),
+     'charset' => 'utf-8',
+     'code' => 200,
+     'header' => 
+    array (
+      'Content-Type' => 'application/json; charset=utf-8',
+      'Access-Control-Allow-Origin' => '*',
+      'Access-Control-Allow-Methods' => 'POST,PUT,GET,DELETE',
+      'Access-Control-Allow-Headers' => 'ApiAuth, User-Agent, Keep-Alive, Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With',
+      'Access-Control-Allow-Credentials' => 'true',
+    ),
+     'content' => NULL,
+  )),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'http://localhost:8080',
+  'apiauth' => '822f48ee2e440aa4f681880c067f1518',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'size' => '10',
+  'type' => '',
+  'keywords' => '',
+  'status' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-11T10:07:26+08:00 ] 127.0.0.1 POST www.api.com/admin/Login/index
+[运行时间：0.189113s] [吞吐率：5.29req/s] [内存消耗：2,357.65kb] [文件加载：58]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000455s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'http://localhost:8080',
+  'content-length' => '39',
+  'apiauth' => 'null',
+  'content-type' => 'application/json;charset=utf-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'root',
+  'password' => '123456',
+)
+[ info ] [ CACHE ] INIT file
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000790s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002004s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user` [ RunTime:0.011924s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_user` WHERE  `username` = 'root'  AND `password` = '912601e4ad1b308c9ae41877cf6ca754' LIMIT 1 [ RunTime:0.000586s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_data` [ RunTime:0.011604s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_user_data` WHERE  `uid` = '1' LIMIT 1 [ RunTime:0.000389s ]
+[ sql ] [ SQL ] UPDATE `admin_user_data`  SET `loginTimes`=21,`lastLoginTime`=1549850846  WHERE  `id` = 1 [ RunTime:0.097569s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.010949s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `hide` = 0 [ RunTime:0.000585s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:07:36+08:00 ] 127.0.0.1 GET www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190210
+[运行时间：2.607864s] [吞吐率：0.38req/s] [内存消耗：1,447.32kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000452s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'http://localhost:8080',
+  'apiauth' => '44d6b5945d1abaf1393bc58c05d4a5ac',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2019',
+  'vJzdate' => '20190210',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.205604s ] oci:dbname=//10.10.1.39/test;charset=utf8
+[ sql ] [ SQL ] SELECT m.year_val nian,
+       m.season,
+       m.season_id,
+                                    decode(m.C_SOTYPE_ID,1,m.season||'季外购',m.season||'季本厂') ji,
+                                   m.c_sotype_id laiyuan,
+                                   SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) + SUM(DECODE(B.DOCTYPE, 'INS', QTY)) fhl,
+                                   SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) qh,
+                                   SUM(DECODE(B.DOCTYPE, 'INS', QTY)) bh,
+                                   round(SUM(DECODE(B.DOCTYPE, 'INS', QTY))/(SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) + SUM(DECODE(B.DOCTYPE, 'INS', QTY))),2)||'%' bdl,
+                                   COUNT(DISTINCT M.PROD_CLS_NUM) KS,
+                                    'http://10.10.1.32:8018/Images/sku/'||max(m.e_name)||'.jpg' kh
+                              FROM B_SO B,
+                                   B_SOITEM S,
+                                   product_view_bi M,
+                                   C_SOTYPE C
+                             WHERE B.ID(+) = S.B_SO_ID
+                                AND S.M_PRODUCT_ID = M.m_product_id(+)
+                                AND B.C_STORE_ID IN (278, 1016)
+                                AND M.dhcz_id NOT IN (580, 584,1594,1723,1727)
+                                AND B.STATUS = 2
+                                AND S.STATUS = 2
+                                AND M.ISACTIVE = 'Y'
+                                AND M.PROD_SORT_ID = 240
+                                and b.billdate BETWEEN 20170101 AND  20190210
+                                AND m.year_val='2019'
+                             GROUP BY m.year_val,m.season,m.season_id,m.c_sotype_id
+                             ORDER BY m.year_val,m.season,m.season_id,m.c_sotype_id [ RunTime:2.359212s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:09:35+08:00 ] 127.0.0.1 GET www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190210
+[运行时间：1.942777s] [吞吐率：0.51req/s] [内存消耗：1,447.32kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000544s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'http://localhost:8080',
+  'apiauth' => '44d6b5945d1abaf1393bc58c05d4a5ac',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2019',
+  'vJzdate' => '20190210',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.173018s ] oci:dbname=//10.10.1.39/test;charset=utf8
+[ sql ] [ SQL ] SELECT m.year_val nian,
+       m.season,
+       m.season_id,
+                                    decode(m.C_SOTYPE_ID,1,m.season||'季外购',m.season||'季本厂') ji,
+                                   m.c_sotype_id laiyuan,
+                                   SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) + SUM(DECODE(B.DOCTYPE, 'INS', QTY)) fhl,
+                                   SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) qh,
+                                   SUM(DECODE(B.DOCTYPE, 'INS', QTY)) bh,
+                                   round(SUM(DECODE(B.DOCTYPE, 'INS', QTY))/(SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) + SUM(DECODE(B.DOCTYPE, 'INS', QTY))),2)||'%' bdl,
+                                   COUNT(DISTINCT M.PROD_CLS_NUM) KS,
+                                    'http://10.10.1.32:8018/Images/sku/'||max(m.e_name)||'.jpg' kh
+                              FROM B_SO B,
+                                   B_SOITEM S,
+                                   product_view_bi M,
+                                   C_SOTYPE C
+                             WHERE B.ID(+) = S.B_SO_ID
+                                AND S.M_PRODUCT_ID = M.m_product_id(+)
+                                AND B.C_STORE_ID IN (278, 1016)
+                                AND M.dhcz_id NOT IN (580, 584,1594,1723,1727)
+                                AND B.STATUS = 2
+                                AND S.STATUS = 2
+                                AND M.ISACTIVE = 'Y'
+                                AND M.PROD_SORT_ID = 240
+                                and b.billdate BETWEEN 20170101 AND  20190210
+                                AND m.year_val='2019'
+                             GROUP BY m.year_val,m.season,m.season_id,m.c_sotype_id
+                             ORDER BY m.year_val,m.season,m.season_id,m.c_sotype_id [ RunTime:1.720371s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:14:08+08:00 ] 127.0.0.1 GET www.api.com/admin/InterfaceList/index?page=1&size=10&type=&keywords=&status=
+[运行时间：0.257240s] [吞吐率：3.89req/s] [内存消耗：2,441.33kb] [文件加载：65]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000520s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT file
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiAuth @ [ RunTime:0.003792s ]
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiPermission @ [ RunTime:0.001491s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\AdminLog @ [ RunTime:0.197626s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'InterfaceList',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'http://localhost:8080',
+  'apiauth' => '44d6b5945d1abaf1393bc58c05d4a5ac',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'size' => '10',
+  'type' => '',
+  'keywords' => '',
+  'status' => '',
+)
+[ info ] [ RUN ] app\admin\controller\InterfaceList->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\InterfaceList.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000561s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002126s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.019650s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `url` = 'admin/InterfaceList/index' LIMIT 1 [ RunTime:0.001764s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_action` [ RunTime:0.013262s ]
+[ sql ] [ SQL ] INSERT INTO `admin_user_action` (`actionName` , `uid` , `nickname` , `addTime` , `url` , `data`) VALUES ('接口列表' , 1 , 'root' , 1549851248 , 'admin/InterfaceList/index' , '{\"page\":\"1\",\"size\":\"10\",\"type\":\"\",\"keywords\":\"\",\"status\":\"\"}') [ RunTime:0.143600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_list` [ RunTime:0.011856s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `admin_list` LIMIT 1 [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_list` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000437s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:15:15+08:00 ] 127.0.0.1 GET www.api.com/admin/InterfaceGroup/getAll
+[运行时间：0.191339s] [吞吐率：5.23req/s] [内存消耗：2,354.48kb] [文件加载：61]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000506s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT file
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiAuth @ [ RunTime:0.002515s ]
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiPermission @ [ RunTime:0.001221s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\AdminLog @ [ RunTime:0.134792s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'InterfaceGroup',
+    2 => 'getAll',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'http://localhost:8080',
+  'apiauth' => '44d6b5945d1abaf1393bc58c05d4a5ac',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\InterfaceGroup->getAll[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\InterfaceGroup.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000774s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000926s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.028535s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `url` = 'admin/InterfaceGroup/getAll' LIMIT 1 [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_action` [ RunTime:0.015188s ]
+[ sql ] [ SQL ] INSERT INTO `admin_user_action` (`actionName` , `uid` , `nickname` , `addTime` , `url` , `data`) VALUES ('获取全部有效的接口组' , 1 , 'root' , 1549851315 , 'admin/InterfaceGroup/getAll' , '[]') [ RunTime:0.076023s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_group` [ RunTime:0.016197s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_group` WHERE  `status` = 1 [ RunTime:0.001007s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:15:43+08:00 ] 127.0.0.1 GET www.api.com/admin/Fields/request?page=1&size=10&hash=5c527fc326ead
+[运行时间：0.272118s] [吞吐率：3.67req/s] [内存消耗：2,447.34kb] [文件加载：66]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000759s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT file
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiAuth @ [ RunTime:0.002740s ]
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiPermission @ [ RunTime:0.001262s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\AdminLog @ [ RunTime:0.130301s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Fields',
+    2 => 'request',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'http://localhost:8080',
+  'apiauth' => '44d6b5945d1abaf1393bc58c05d4a5ac',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'size' => '10',
+  'hash' => '5c527fc326ead',
+)
+[ info ] [ RUN ] app\admin\controller\Fields->request[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\Fields.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000498s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001300s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.012887s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `url` = 'admin/Fields/request' LIMIT 1 [ RunTime:0.000754s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_action` [ RunTime:0.012183s ]
+[ sql ] [ SQL ] INSERT INTO `admin_user_action` (`actionName` , `uid` , `nickname` , `addTime` , `url` , `data`) VALUES ('获取接口请求字段' , 1 , 'root' , 1549851343 , 'admin/Fields/request' , '{\"page\":\"1\",\"size\":\"10\",\"hash\":\"5c527fc326ead\"}') [ RunTime:0.090993s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_fields` [ RunTime:0.060536s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `admin_fields` WHERE  `hash` = '5c527fc326ead'  AND `type` = 0 LIMIT 1 [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_fields` WHERE  `hash` = '5c527fc326ead'  AND `type` = 0 LIMIT 0,10 [ RunTime:0.000529s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:15:54+08:00 ] 127.0.0.1 GET www.api.com/admin/Fields/response?page=1&size=10&hash=5c527fc326ead
+[运行时间：0.278818s] [吞吐率：3.59req/s] [内存消耗：2,450.20kb] [文件加载：66]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000736s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT file
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiAuth @ [ RunTime:0.002462s ]
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiPermission @ [ RunTime:0.001220s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\AdminLog @ [ RunTime:0.226141s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Fields',
+    2 => 'response',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'http://localhost:8080',
+  'apiauth' => '44d6b5945d1abaf1393bc58c05d4a5ac',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'size' => '10',
+  'hash' => '5c527fc326ead',
+)
+[ info ] [ RUN ] app\admin\controller\Fields->response[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\Fields.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000481s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000817s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.091596s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `url` = 'admin/Fields/response' LIMIT 1 [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_action` [ RunTime:0.010791s ]
+[ sql ] [ SQL ] INSERT INTO `admin_user_action` (`actionName` , `uid` , `nickname` , `addTime` , `url` , `data`) VALUES ('获取接口返回字段' , 1 , 'root' , 1549851354 , 'admin/Fields/response' , '{\"page\":\"1\",\"size\":\"10\",\"hash\":\"5c527fc326ead\"}') [ RunTime:0.108841s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_fields` [ RunTime:0.010676s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `admin_fields` WHERE  `hash` = '5c527fc326ead'  AND `type` = 1 LIMIT 1 [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_fields` WHERE  `hash` = '5c527fc326ead'  AND `type` = 1 LIMIT 0,10 [ RunTime:0.000552s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:16:12+08:00 ] 127.0.0.1 GET www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190210
+[运行时间：1.893736s] [吞吐率：0.53req/s] [内存消耗：1,447.32kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000510s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'http://localhost:8080',
+  'apiauth' => '44d6b5945d1abaf1393bc58c05d4a5ac',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2019',
+  'vJzdate' => '20190210',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.171158s ] oci:dbname=//10.10.1.39/test;charset=utf8
+[ sql ] [ SQL ] SELECT m.year_val nian,
+       m.season,
+       m.season_id,
+                                    decode(m.C_SOTYPE_ID,1,m.season||'季外购',m.season||'季本厂') ji,
+                                   m.c_sotype_id laiyuan,
+                                   SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) + SUM(DECODE(B.DOCTYPE, 'INS', QTY)) fhl,
+                                   SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) qh,
+                                   SUM(DECODE(B.DOCTYPE, 'INS', QTY)) bh,
+                                   round(SUM(DECODE(B.DOCTYPE, 'INS', QTY))/(SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) + SUM(DECODE(B.DOCTYPE, 'INS', QTY))),2)||'%' bdl,
+                                   COUNT(DISTINCT M.PROD_CLS_NUM) KS,
+                                    'http://10.10.1.32:8018/Images/sku/'||max(m.e_name)||'.jpg' kh
+                              FROM B_SO B,
+                                   B_SOITEM S,
+                                   product_view_bi M,
+                                   C_SOTYPE C
+                             WHERE B.ID(+) = S.B_SO_ID
+                                AND S.M_PRODUCT_ID = M.m_product_id(+)
+                                AND B.C_STORE_ID IN (278, 1016)
+                                AND M.dhcz_id NOT IN (580, 584,1594,1723,1727)
+                                AND B.STATUS = 2
+                                AND S.STATUS = 2
+                                AND M.ISACTIVE = 'Y'
+                                AND M.PROD_SORT_ID = 240
+                                and b.billdate BETWEEN 20170101 AND  20190210
+                                AND m.year_val='2019'
+                             GROUP BY m.year_val,m.season,m.season_id,m.c_sotype_id
+                             ORDER BY m.year_val,m.season,m.season_id,m.c_sotype_id [ RunTime:1.684921s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:26:16+08:00 ] 127.0.0.1 GET www.api.com/bi/5c527fc326ead?vYear=2019&vJzdate=20190210
+[运行时间：1.911687s] [吞吐率：0.52req/s] [内存消耗：1,446.71kb] [文件加载：47]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.001287s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bi',
+    1 => 'bi',
+    2 => 'getNxfx_1',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'vYear' => '2019',
+  'vJzdate' => '20190210',
+)
+[ info ] [ RUN ] app\bi\controller\Bi->getNxfx_1[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\bi\controller\Bi.php ]
+[ info ] [ DB ] INIT oracle
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.168022s ] oci:dbname=//10.10.1.39/test;charset=utf8
+[ sql ] [ SQL ] SELECT m.year_val nian,
+       m.season,
+       m.season_id,
+                                    decode(m.C_SOTYPE_ID,1,m.season||'季外购',m.season||'季本厂') ji,
+                                   m.c_sotype_id laiyuan,
+                                   SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) + SUM(DECODE(B.DOCTYPE, 'INS', QTY)) fhl,
+                                   SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) qh,
+                                   SUM(DECODE(B.DOCTYPE, 'INS', QTY)) bh,
+                                   round(SUM(DECODE(B.DOCTYPE, 'INS', QTY))/(SUM(DECODE(B.DOCTYPE, 'FWD', QTY)) + SUM(DECODE(B.DOCTYPE, 'INS', QTY))),2)||'%' bdl,
+                                   COUNT(DISTINCT M.PROD_CLS_NUM) KS,
+                                    'http://10.10.1.32:8018/Images/sku/'||max(m.e_name)||'.jpg' kh
+                              FROM B_SO B,
+                                   B_SOITEM S,
+                                   product_view_bi M,
+                                   C_SOTYPE C
+                             WHERE B.ID(+) = S.B_SO_ID
+                                AND S.M_PRODUCT_ID = M.m_product_id(+)
+                                AND B.C_STORE_ID IN (278, 1016)
+                                AND M.dhcz_id NOT IN (580, 584,1594,1723,1727)
+                                AND B.STATUS = 2
+                                AND S.STATUS = 2
+                                AND M.ISACTIVE = 'Y'
+                                AND M.PROD_SORT_ID = 240
+                                and b.billdate BETWEEN 20170101 AND  20190210
+                                AND m.year_val='2019'
+                             GROUP BY m.year_val,m.season,m.season_id,m.c_sotype_id
+                             ORDER BY m.year_val,m.season,m.season_id,m.c_sotype_id [ RunTime:1.699981s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:26:29+08:00 ] 127.0.0.1 GET www.api.com/admin/Fields/response?page=1&size=10&hash=5c527fc326ead
+[运行时间：0.174662s] [吞吐率：5.73req/s] [内存消耗：2,450.20kb] [文件加载：66]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000962s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT file
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiAuth @ [ RunTime:0.005711s ]
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiPermission @ [ RunTime:0.002149s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\AdminLog @ [ RunTime:0.108577s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Fields',
+    2 => 'response',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'http://localhost:8080',
+  'apiauth' => '44d6b5945d1abaf1393bc58c05d4a5ac',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'size' => '10',
+  'hash' => '5c527fc326ead',
+)
+[ info ] [ RUN ] app\admin\controller\Fields->response[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\Fields.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000783s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001498s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.026384s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `url` = 'admin/Fields/response' LIMIT 1 [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_action` [ RunTime:0.011564s ]
+[ sql ] [ SQL ] INSERT INTO `admin_user_action` (`actionName` , `uid` , `nickname` , `addTime` , `url` , `data`) VALUES ('获取接口返回字段' , 1 , 'root' , 1549851989 , 'admin/Fields/response' , '{\"page\":\"1\",\"size\":\"10\",\"hash\":\"5c527fc326ead\"}') [ RunTime:0.051576s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_fields` [ RunTime:0.011478s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `admin_fields` WHERE  `hash` = '5c527fc326ead'  AND `type` = 1 LIMIT 1 [ RunTime:0.000495s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_fields` WHERE  `hash` = '5c527fc326ead'  AND `type` = 1 LIMIT 0,10 [ RunTime:0.000552s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:26:37+08:00 ] 127.0.0.1 GET www.api.com/admin/Fields/del?id=3
+[运行时间：0.293539s] [吞吐率：3.41req/s] [内存消耗：2,333.11kb] [文件加载：62]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000497s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT file
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiAuth @ [ RunTime:0.002738s ]
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiPermission @ [ RunTime:0.002301s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\AdminLog @ [ RunTime:0.113275s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Fields',
+    2 => 'del',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'http://localhost:8080',
+  'apiauth' => '44d6b5945d1abaf1393bc58c05d4a5ac',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '3',
+)
+[ info ] [ RUN ] app\admin\controller\Fields->del[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\Fields.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000739s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000981s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.022850s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `url` = 'admin/Fields/del' LIMIT 1 [ RunTime:0.000635s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_action` [ RunTime:0.011906s ]
+[ sql ] [ SQL ] INSERT INTO `admin_user_action` (`actionName` , `uid` , `nickname` , `addTime` , `url` , `data`) VALUES ('删除接口字段' , 1 , 'root' , 1549851997 , 'admin/Fields/del' , '{\"id\":\"3\"}') [ RunTime:0.064497s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_fields` [ RunTime:0.011514s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_fields` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.027299s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_fields` WHERE  `id` = 3 [ RunTime:0.000585s ]
+[ sql ] [ SQL ] DELETE FROM `admin_fields`    WHERE  `id` = 3 [ RunTime:0.093532s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:26:39+08:00 ] 127.0.0.1 GET www.api.com/admin/Fields/del?id=4
+[运行时间：0.243298s] [吞吐率：4.11req/s] [内存消耗：2,333.11kb] [文件加载：62]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000526s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT file
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiAuth @ [ RunTime:0.002788s ]
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiPermission @ [ RunTime:0.001414s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\AdminLog @ [ RunTime:0.141985s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Fields',
+    2 => 'del',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'http://localhost:8080',
+  'apiauth' => '44d6b5945d1abaf1393bc58c05d4a5ac',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '4',
+)
+[ info ] [ RUN ] app\admin\controller\Fields->del[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\Fields.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000628s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010181s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.038891s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `url` = 'admin/Fields/del' LIMIT 1 [ RunTime:0.000473s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_action` [ RunTime:0.012119s ]
+[ sql ] [ SQL ] INSERT INTO `admin_user_action` (`actionName` , `uid` , `nickname` , `addTime` , `url` , `data`) VALUES ('删除接口字段' , 1 , 'root' , 1549851999 , 'admin/Fields/del' , '{\"id\":\"4\"}') [ RunTime:0.068137s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_fields` [ RunTime:0.011119s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_fields` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_fields` WHERE  `id` = 4 [ RunTime:0.000428s ]
+[ sql ] [ SQL ] DELETE FROM `admin_fields`    WHERE  `id` = 4 [ RunTime:0.050410s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:26:42+08:00 ] 127.0.0.1 GET www.api.com/admin/Fields/del?id=5
+[运行时间：0.225476s] [吞吐率：4.44req/s] [内存消耗：2,333.11kb] [文件加载：62]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000503s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT file
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiAuth @ [ RunTime:0.002579s ]
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiPermission @ [ RunTime:0.001401s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\AdminLog @ [ RunTime:0.119466s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Fields',
+    2 => 'del',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'http://localhost:8080',
+  'apiauth' => '44d6b5945d1abaf1393bc58c05d4a5ac',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ RUN ] app\admin\controller\Fields->del[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\Fields.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000547s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010782s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.025289s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `url` = 'admin/Fields/del' LIMIT 1 [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_action` [ RunTime:0.013217s ]
+[ sql ] [ SQL ] INSERT INTO `admin_user_action` (`actionName` , `uid` , `nickname` , `addTime` , `url` , `data`) VALUES ('删除接口字段' , 1 , 'root' , 1549852002 , 'admin/Fields/del' , '{\"id\":\"5\"}') [ RunTime:0.057675s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_fields` [ RunTime:0.011143s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_fields` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000548s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_fields` WHERE  `id` = 5 [ RunTime:0.000472s ]
+[ sql ] [ SQL ] DELETE FROM `admin_fields`    WHERE  `id` = 5 [ RunTime:0.055761s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:26:43+08:00 ] 127.0.0.1 GET www.api.com/admin/Fields/del?id=6
+[运行时间：0.213856s] [吞吐率：4.68req/s] [内存消耗：2,333.11kb] [文件加载：62]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000611s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT file
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiAuth @ [ RunTime:0.002787s ]
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiPermission @ [ RunTime:0.001342s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\AdminLog @ [ RunTime:0.102810s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Fields',
+    2 => 'del',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'http://localhost:8080',
+  'apiauth' => '44d6b5945d1abaf1393bc58c05d4a5ac',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '6',
+)
+[ info ] [ RUN ] app\admin\controller\Fields->del[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\Fields.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000589s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000993s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.021292s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `url` = 'admin/Fields/del' LIMIT 1 [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_action` [ RunTime:0.012189s ]
+[ sql ] [ SQL ] INSERT INTO `admin_user_action` (`actionName` , `uid` , `nickname` , `addTime` , `url` , `data`) VALUES ('删除接口字段' , 1 , 'root' , 1549852003 , 'admin/Fields/del' , '{\"id\":\"6\"}') [ RunTime:0.053536s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_fields` [ RunTime:0.012785s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_fields` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000635s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_fields` WHERE  `id` = 6 [ RunTime:0.000558s ]
+[ sql ] [ SQL ] DELETE FROM `admin_fields`    WHERE  `id` = 6 [ RunTime:0.056635s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:26:44+08:00 ] 127.0.0.1 GET www.api.com/admin/Fields/del?id=7
+[运行时间：0.263852s] [吞吐率：3.79req/s] [内存消耗：2,333.11kb] [文件加载：62]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000536s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT file
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiAuth @ [ RunTime:0.002634s ]
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiPermission @ [ RunTime:0.001287s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\AdminLog @ [ RunTime:0.141865s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Fields',
+    2 => 'del',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'http://localhost:8080',
+  'apiauth' => '44d6b5945d1abaf1393bc58c05d4a5ac',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '7',
+)
+[ info ] [ RUN ] app\admin\controller\Fields->del[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\Fields.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000732s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010423s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.062585s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `url` = 'admin/Fields/del' LIMIT 1 [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_action` [ RunTime:0.011640s ]
+[ sql ] [ SQL ] INSERT INTO `admin_user_action` (`actionName` , `uid` , `nickname` , `addTime` , `url` , `data`) VALUES ('删除接口字段' , 1 , 'root' , 1549852004 , 'admin/Fields/del' , '{\"id\":\"7\"}') [ RunTime:0.043177s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_fields` [ RunTime:0.010779s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_fields` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_fields` WHERE  `id` = 7 [ RunTime:0.000376s ]
+[ sql ] [ SQL ] DELETE FROM `admin_fields`    WHERE  `id` = 7 [ RunTime:0.071717s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:26:46+08:00 ] 127.0.0.1 GET www.api.com/admin/Fields/del?id=8
+[运行时间：0.249189s] [吞吐率：4.01req/s] [内存消耗：2,333.11kb] [文件加载：62]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000511s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT file
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiAuth @ [ RunTime:0.002623s ]
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiPermission @ [ RunTime:0.001303s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\AdminLog @ [ RunTime:0.127082s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Fields',
+    2 => 'del',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'http://localhost:8080',
+  'apiauth' => '44d6b5945d1abaf1393bc58c05d4a5ac',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '8',
+)
+[ info ] [ RUN ] app\admin\controller\Fields->del[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\Fields.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000795s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011595s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.025407s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `url` = 'admin/Fields/del' LIMIT 1 [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_action` [ RunTime:0.011208s ]
+[ sql ] [ SQL ] INSERT INTO `admin_user_action` (`actionName` , `uid` , `nickname` , `addTime` , `url` , `data`) VALUES ('删除接口字段' , 1 , 'root' , 1549852006 , 'admin/Fields/del' , '{\"id\":\"8\"}') [ RunTime:0.066895s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_fields` [ RunTime:0.012388s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_fields` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_fields` WHERE  `id` = 8 [ RunTime:0.000868s ]
+[ sql ] [ SQL ] DELETE FROM `admin_fields`    WHERE  `id` = 8 [ RunTime:0.068657s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:26:47+08:00 ] 127.0.0.1 GET www.api.com/admin/Fields/del?id=9
+[运行时间：0.203077s] [吞吐率：4.92req/s] [内存消耗：2,333.11kb] [文件加载：62]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000524s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT file
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiAuth @ [ RunTime:0.002726s ]
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiPermission @ [ RunTime:0.001238s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\AdminLog @ [ RunTime:0.083447s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Fields',
+    2 => 'del',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'http://localhost:8080',
+  'apiauth' => '44d6b5945d1abaf1393bc58c05d4a5ac',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '9',
+)
+[ info ] [ RUN ] app\admin\controller\Fields->del[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\Fields.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000690s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001004s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.011528s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `url` = 'admin/Fields/del' LIMIT 1 [ RunTime:0.000698s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_action` [ RunTime:0.011697s ]
+[ sql ] [ SQL ] INSERT INTO `admin_user_action` (`actionName` , `uid` , `nickname` , `addTime` , `url` , `data`) VALUES ('删除接口字段' , 1 , 'root' , 1549852007 , 'admin/Fields/del' , '{\"id\":\"9\"}') [ RunTime:0.045787s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_fields` [ RunTime:0.011146s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_fields` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000426s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_fields` WHERE  `id` = 9 [ RunTime:0.000417s ]
+[ sql ] [ SQL ] DELETE FROM `admin_fields`    WHERE  `id` = 9 [ RunTime:0.067501s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:26:49+08:00 ] 127.0.0.1 GET www.api.com/admin/Fields/del?id=10
+[运行时间：0.224105s] [吞吐率：4.46req/s] [内存消耗：2,333.11kb] [文件加载：62]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000566s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT file
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiAuth @ [ RunTime:0.002592s ]
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiPermission @ [ RunTime:0.001205s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\AdminLog @ [ RunTime:0.128391s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Fields',
+    2 => 'del',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'http://localhost:8080',
+  'apiauth' => '44d6b5945d1abaf1393bc58c05d4a5ac',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '10',
+)
+[ info ] [ RUN ] app\admin\controller\Fields->del[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\Fields.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000554s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010048s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.038915s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `url` = 'admin/Fields/del' LIMIT 1 [ RunTime:0.000508s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_action` [ RunTime:0.010790s ]
+[ sql ] [ SQL ] INSERT INTO `admin_user_action` (`actionName` , `uid` , `nickname` , `addTime` , `url` , `data`) VALUES ('删除接口字段' , 1 , 'root' , 1549852008 , 'admin/Fields/del' , '{\"id\":\"10\"}') [ RunTime:0.055618s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_fields` [ RunTime:0.011189s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_fields` WHERE  `id` = 10 LIMIT 1 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_fields` WHERE  `id` = 10 [ RunTime:0.000375s ]
+[ sql ] [ SQL ] DELETE FROM `admin_fields`    WHERE  `id` = 10 [ RunTime:0.043839s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:26:50+08:00 ] 127.0.0.1 GET www.api.com/admin/Fields/del?id=11
+[运行时间：0.277770s] [吞吐率：3.60req/s] [内存消耗：2,333.11kb] [文件加载：62]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000495s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT file
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiAuth @ [ RunTime:0.002702s ]
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiPermission @ [ RunTime:0.001173s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\AdminLog @ [ RunTime:0.166909s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Fields',
+    2 => 'del',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'http://localhost:8080',
+  'apiauth' => '44d6b5945d1abaf1393bc58c05d4a5ac',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '11',
+)
+[ info ] [ RUN ] app\admin\controller\Fields->del[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\Fields.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000549s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000953s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.022624s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `url` = 'admin/Fields/del' LIMIT 1 [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_action` [ RunTime:0.063136s ]
+[ sql ] [ SQL ] INSERT INTO `admin_user_action` (`actionName` , `uid` , `nickname` , `addTime` , `url` , `data`) VALUES ('删除接口字段' , 1 , 'root' , 1549852010 , 'admin/Fields/del' , '{\"id\":\"11\"}') [ RunTime:0.068145s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_fields` [ RunTime:0.013216s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_fields` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000557s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_fields` WHERE  `id` = 11 [ RunTime:0.000397s ]
+[ sql ] [ SQL ] DELETE FROM `admin_fields`    WHERE  `id` = 11 [ RunTime:0.057308s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:26:52+08:00 ] 127.0.0.1 GET www.api.com/admin/Fields/del?id=12
+[运行时间：0.501542s] [吞吐率：1.99req/s] [内存消耗：2,333.11kb] [文件加载：62]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000565s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT file
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiAuth @ [ RunTime:0.002996s ]
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiPermission @ [ RunTime:0.001537s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\AdminLog @ [ RunTime:0.361377s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Fields',
+    2 => 'del',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'http://localhost:8080',
+  'apiauth' => '44d6b5945d1abaf1393bc58c05d4a5ac',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12',
+)
+[ info ] [ RUN ] app\admin\controller\Fields->del[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\Fields.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000492s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000986s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.088419s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `url` = 'admin/Fields/del' LIMIT 1 [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_action` [ RunTime:0.173385s ]
+[ sql ] [ SQL ] INSERT INTO `admin_user_action` (`actionName` , `uid` , `nickname` , `addTime` , `url` , `data`) VALUES ('删除接口字段' , 1 , 'root' , 1549852012 , 'admin/Fields/del' , '{\"id\":\"12\"}') [ RunTime:0.086477s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_fields` [ RunTime:0.058964s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_fields` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.000651s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_fields` WHERE  `id` = 12 [ RunTime:0.000599s ]
+[ sql ] [ SQL ] DELETE FROM `admin_fields`    WHERE  `id` = 12 [ RunTime:0.038739s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:27:01+08:00 ] 127.0.0.1 GET www.api.com/admin/Fields/response?page=1&size=10&hash=5c527fc326ead
+[运行时间：0.201014s] [吞吐率：4.97req/s] [内存消耗：2,446.63kb] [文件加载：66]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000483s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT file
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiAuth @ [ RunTime:0.003023s ]
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiPermission @ [ RunTime:0.001294s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\AdminLog @ [ RunTime:0.119155s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Fields',
+    2 => 'response',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'http://localhost:8080',
+  'apiauth' => '44d6b5945d1abaf1393bc58c05d4a5ac',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'size' => '10',
+  'hash' => '5c527fc326ead',
+)
+[ info ] [ RUN ] app\admin\controller\Fields->response[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\Fields.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000443s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001158s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.035207s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `url` = 'admin/Fields/response' LIMIT 1 [ RunTime:0.000749s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_action` [ RunTime:0.016485s ]
+[ sql ] [ SQL ] INSERT INTO `admin_user_action` (`actionName` , `uid` , `nickname` , `addTime` , `url` , `data`) VALUES ('获取接口返回字段' , 1 , 'root' , 1549852021 , 'admin/Fields/response' , '{\"page\":\"1\",\"size\":\"10\",\"hash\":\"5c527fc326ead\"}') [ RunTime:0.050951s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_fields` [ RunTime:0.011198s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `admin_fields` WHERE  `hash` = '5c527fc326ead'  AND `type` = 1 LIMIT 1 [ RunTime:0.026777s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_fields` WHERE  `hash` = '5c527fc326ead'  AND `type` = 1 LIMIT 0,10 [ RunTime:0.000549s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:27:19+08:00 ] 127.0.0.1 GET www.api.com/wiki
+[运行时间：0.301020s] [吞吐率：3.32req/s] [内存消耗：1,378.86kb] [文件加载：42]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000509s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wiki',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\wiki\controller\Index->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\wiki\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-11T10:27:19+08:00 ] 127.0.0.1 GET www.api.com/wiki/login.html
+[运行时间：0.129833s] [吞吐率：7.70req/s] [内存消耗：1,379.46kb] [文件加载：42]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000728s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wiki',
+    1 => 'index',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'PHPSESSID=d47nqjgcirp6oc90o94e4jumi0',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\wiki\controller\Index->login[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\wiki\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\public/../application/wiki\view\index\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-02-11T10:27:24+08:00 ] 127.0.0.1 GET www.api.com/admin/InterfaceGroup/index?page=1&size=10&type=&keywords=&status=
+[运行时间：0.151821s] [吞吐率：6.59req/s] [内存消耗：2,432.13kb] [文件加载：65]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000482s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT file
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiAuth @ [ RunTime:0.003740s ]
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiPermission @ [ RunTime:0.001559s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\AdminLog @ [ RunTime:0.096752s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'InterfaceGroup',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'http://localhost:8080',
+  'apiauth' => '44d6b5945d1abaf1393bc58c05d4a5ac',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'size' => '10',
+  'type' => '',
+  'keywords' => '',
+  'status' => '',
+)
+[ info ] [ RUN ] app\admin\controller\InterfaceGroup->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\InterfaceGroup.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000529s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000874s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.012845s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `url` = 'admin/InterfaceGroup/index' LIMIT 1 [ RunTime:0.000661s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_action` [ RunTime:0.015758s ]
+[ sql ] [ SQL ] INSERT INTO `admin_user_action` (`actionName` , `uid` , `nickname` , `addTime` , `url` , `data`) VALUES ('接口分组列表' , 1 , 'root' , 1549852043 , 'admin/InterfaceGroup/index' , '{\"page\":\"1\",\"size\":\"10\",\"type\":\"\",\"keywords\":\"\",\"status\":\"\"}') [ RunTime:0.054466s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_group` [ RunTime:0.013563s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `admin_group` LIMIT 1 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_group` LIMIT 0,10 [ RunTime:0.000369s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:27:26+08:00 ] 127.0.0.1 GET www.api.com/admin/InterfaceList/index?page=1&size=10&type=&keywords=&status=
+[运行时间：0.190956s] [吞吐率：5.24req/s] [内存消耗：2,441.33kb] [文件加载：65]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000627s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT file
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiAuth @ [ RunTime:0.002518s ]
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiPermission @ [ RunTime:0.001179s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\AdminLog @ [ RunTime:0.134916s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'InterfaceList',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'http://localhost:8080',
+  'apiauth' => '44d6b5945d1abaf1393bc58c05d4a5ac',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'size' => '10',
+  'type' => '',
+  'keywords' => '',
+  'status' => '',
+)
+[ info ] [ RUN ] app\admin\controller\InterfaceList->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\InterfaceList.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000522s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000956s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.041858s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `url` = 'admin/InterfaceList/index' LIMIT 1 [ RunTime:0.000683s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_action` [ RunTime:0.013901s ]
+[ sql ] [ SQL ] INSERT INTO `admin_user_action` (`actionName` , `uid` , `nickname` , `addTime` , `url` , `data`) VALUES ('接口列表' , 1 , 'root' , 1549852045 , 'admin/InterfaceList/index' , '{\"page\":\"1\",\"size\":\"10\",\"type\":\"\",\"keywords\":\"\",\"status\":\"\"}') [ RunTime:0.064997s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_list` [ RunTime:0.013858s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `admin_list` LIMIT 1 [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_list` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000409s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:27:29+08:00 ] 127.0.0.1 GET www.api.com/admin/App/index?page=1&size=10&type=&keywords=&status=
+[运行时间：0.249096s] [吞吐率：4.01req/s] [内存消耗：2,436.51kb] [文件加载：65]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000996s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT file
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiAuth @ [ RunTime:0.002597s ]
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiPermission @ [ RunTime:0.001511s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\AdminLog @ [ RunTime:0.120601s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'App',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'http://localhost:8080',
+  'apiauth' => '44d6b5945d1abaf1393bc58c05d4a5ac',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'size' => '10',
+  'type' => '',
+  'keywords' => '',
+  'status' => '',
+)
+[ info ] [ RUN ] app\admin\controller\App->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\App.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000556s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011310s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.012310s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `url` = 'admin/App/index' LIMIT 1 [ RunTime:0.000502s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_action` [ RunTime:0.012564s ]
+[ sql ] [ SQL ] INSERT INTO `admin_user_action` (`actionName` , `uid` , `nickname` , `addTime` , `url` , `data`) VALUES ('应用列表' , 1 , 'root' , 1549852049 , 'admin/App/index' , '{\"page\":\"1\",\"size\":\"10\",\"type\":\"\",\"keywords\":\"\",\"status\":\"\"}') [ RunTime:0.070677s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_app` [ RunTime:0.066685s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `admin_app` LIMIT 1 [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_app` ORDER BY `app_addTime` DESC LIMIT 0,10 [ RunTime:0.000487s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:27:39+08:00 ] 127.0.0.1 POST www.api.com/wiki/doLogin.html
+[运行时间：0.180596s] [吞吐率：5.54req/s] [内存消耗：2,203.01kb] [文件加载：50]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000452s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wiki',
+    1 => 'index',
+    2 => 'doLogin',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'PHPSESSID=d47nqjgcirp6oc90o94e4jumi0',
+  'connection' => 'close',
+  'content-length' => '61',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://www.api.com/wiki/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'appId' => ' 18070249 ',
+  'appSecret' => ' kQvnjQamyHvqNDtXNMHxelgSuZwWAaKS ',
+)
+[ info ] [ RUN ] app\wiki\controller\Index->doLogin[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\wiki\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001227s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_app` [ RunTime:0.026050s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_app` WHERE  `app_id` = ' 18070249 '  AND `app_secret` = ' kQvnjQamyHvqNDtXNMHxelgSuZwWAaKS ' LIMIT 1 [ RunTime:0.000502s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:27:55+08:00 ] 127.0.0.1 POST www.api.com/wiki/doLogin.html
+[运行时间：0.122074s] [吞吐率：8.19req/s] [内存消耗：2,203.01kb] [文件加载：50]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000498s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wiki',
+    1 => 'index',
+    2 => 'doLogin',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'PHPSESSID=d47nqjgcirp6oc90o94e4jumi0',
+  'connection' => 'close',
+  'content-length' => '60',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://www.api.com/wiki/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'appId' => ' 18070249',
+  'appSecret' => ' kQvnjQamyHvqNDtXNMHxelgSuZwWAaKS ',
+)
+[ info ] [ RUN ] app\wiki\controller\Index->doLogin[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\wiki\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001848s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_app` [ RunTime:0.076901s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_app` WHERE  `app_id` = ' 18070249'  AND `app_secret` = ' kQvnjQamyHvqNDtXNMHxelgSuZwWAaKS ' LIMIT 1 [ RunTime:0.000547s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:28:09+08:00 ] 127.0.0.1 POST www.api.com/wiki/doLogin.html
+[运行时间：0.123655s] [吞吐率：8.09req/s] [内存消耗：2,203.01kb] [文件加载：50]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000509s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wiki',
+    1 => 'index',
+    2 => 'doLogin',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'PHPSESSID=d47nqjgcirp6oc90o94e4jumi0',
+  'connection' => 'close',
+  'content-length' => '58',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://www.api.com/wiki/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'appId' => ' 18070249',
+  'appSecret' => 'kQvnjQamyHvqNDtXNMHxelgSuZwWAaKS',
+)
+[ info ] [ RUN ] app\wiki\controller\Index->doLogin[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\wiki\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010775s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_app` [ RunTime:0.071052s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_app` WHERE  `app_id` = ' 18070249'  AND `app_secret` = 'kQvnjQamyHvqNDtXNMHxelgSuZwWAaKS' LIMIT 1 [ RunTime:0.000514s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:28:17+08:00 ] 127.0.0.1 GET www.api.com/admin/AppGroup/getAll
+[运行时间：0.249718s] [吞吐率：4.00req/s] [内存消耗：2,347.98kb] [文件加载：61]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000590s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT file
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiAuth @ [ RunTime:0.002791s ]
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiPermission @ [ RunTime:0.001712s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\AdminLog @ [ RunTime:0.128700s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'AppGroup',
+    2 => 'getAll',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'http://localhost:8080',
+  'apiauth' => '44d6b5945d1abaf1393bc58c05d4a5ac',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\AppGroup->getAll[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\AppGroup.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000608s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000885s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.017336s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `url` = 'admin/AppGroup/getAll' LIMIT 1 [ RunTime:0.000648s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_action` [ RunTime:0.015449s ]
+[ sql ] [ SQL ] INSERT INTO `admin_user_action` (`actionName` , `uid` , `nickname` , `addTime` , `url` , `data`) VALUES ('获取全部可用应用组' , 1 , 'root' , 1549852097 , 'admin/AppGroup/getAll' , '[]') [ RunTime:0.079033s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_app_group` [ RunTime:0.063126s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_app_group` WHERE  `status` = 1 [ RunTime:0.000789s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:28:18+08:00 ] 127.0.0.1 GET www.api.com/admin/App/getAppInfo?id=1
+[运行时间：0.219738s] [吞吐率：4.55req/s] [内存消耗：2,383.29kb] [文件加载：63]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000510s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT file
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiAuth @ [ RunTime:0.002479s ]
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiPermission @ [ RunTime:0.001219s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\AdminLog @ [ RunTime:0.147852s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'App',
+    2 => 'getAppInfo',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'http://localhost:8080',
+  'apiauth' => '44d6b5945d1abaf1393bc58c05d4a5ac',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\App->getAppInfo[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\App.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000428s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010026s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.051847s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `url` = 'admin/App/getAppInfo' LIMIT 1 [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_action` [ RunTime:0.010854s ]
+[ sql ] [ SQL ] INSERT INTO `admin_user_action` (`actionName` , `uid` , `nickname` , `addTime` , `url` , `data`) VALUES ('获取AppId,AppSecret,接口列表,应用接口权限细节' , 1 , 'root' , 1549852098 , 'admin/App/getAppInfo' , '{\"id\":\"1\"}') [ RunTime:0.063428s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_list` [ RunTime:0.011115s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_list` [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_group` [ RunTime:0.010469s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_group` [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_app` [ RunTime:0.012157s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_app` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000407s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:28:20+08:00 ] 127.0.0.1 POST www.api.com/admin/App/edit
+[运行时间：0.222969s] [吞吐率：4.48req/s] [内存消耗：2,327.52kb] [文件加载：61]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000510s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT file
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiAuth @ [ RunTime:0.002428s ]
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiPermission @ [ RunTime:0.001200s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\AdminLog @ [ RunTime:0.128852s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'App',
+    2 => 'edit',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'http://localhost:8080',
+  'content-length' => '194',
+  'apiauth' => '44d6b5945d1abaf1393bc58c05d4a5ac',
+  'content-type' => 'application/json;charset=utf-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'app_name' => 'gmq',
+  'app_id' => '18070249',
+  'app_secret' => 'kQvnjQamyHvqNDtXNMHxelgSuZwWAaKS',
+  'app_info' => '',
+  'app_api' => 
+  array (
+    'default' => 
+    array (
+    ),
+    '5c527fb2afee3' => 
+    array (
+      0 => '5c527fc326ead',
+    ),
+  ),
+  'app_group' => '5c52801d53dde',
+  'id' => 1,
+)
+[ info ] [ RUN ] app\admin\controller\App->edit[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\App.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000497s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010812s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.026234s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `url` = 'admin/App/edit' LIMIT 1 [ RunTime:0.000485s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_action` [ RunTime:0.010749s ]
+[ sql ] [ SQL ] INSERT INTO `admin_user_action` (`actionName` , `uid` , `nickname` , `addTime` , `url` , `data`) VALUES ('编辑应用' , 1 , 'root' , 1549852100 , 'admin/App/edit' , '{\"app_name\":\"gmq\",\"app_id\":\"18070249\",\"app_secret\":\"kQvnjQamyHvqNDtXNMHxelgSuZwWAaKS\",\"app_info\":\"\",\"app_api\":{\"default\":[],\"5c527fb2afee3\":[\"5c527fc326ead\"]},\"app_group\":\"5c52801d53dde\",\"id\":1}') [ RunTime:0.066880s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_app` [ RunTime:0.010842s ]
+[ sql ] [ SQL ] UPDATE `admin_app`  SET `app_name`='gmq',`app_info`='',`app_group`='5c52801d53dde',`app_api`='5c527fc326ead',`app_api_show`='{\"default\":[],\"5c527fb2afee3\":[\"5c527fc326ead\"]}'  WHERE  `id` = 1 [ RunTime:0.047948s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:28:20+08:00 ] 127.0.0.1 GET www.api.com/admin/App/index?page=1&size=10&type=&keywords=&status=
+[运行时间：0.193989s] [吞吐率：5.15req/s] [内存消耗：2,436.51kb] [文件加载：65]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000551s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT file
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiAuth @ [ RunTime:0.003064s ]
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiPermission @ [ RunTime:0.001510s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\AdminLog @ [ RunTime:0.135598s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'App',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'http://localhost:8080',
+  'apiauth' => '44d6b5945d1abaf1393bc58c05d4a5ac',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'size' => '10',
+  'type' => '',
+  'keywords' => '',
+  'status' => '',
+)
+[ info ] [ RUN ] app\admin\controller\App->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\App.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000489s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011818s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.042104s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `url` = 'admin/App/index' LIMIT 1 [ RunTime:0.000496s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_action` [ RunTime:0.013597s ]
+[ sql ] [ SQL ] INSERT INTO `admin_user_action` (`actionName` , `uid` , `nickname` , `addTime` , `url` , `data`) VALUES ('应用列表' , 1 , 'root' , 1549852100 , 'admin/App/index' , '{\"page\":\"1\",\"size\":\"10\",\"type\":\"\",\"keywords\":\"\",\"status\":\"\"}') [ RunTime:0.052418s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_app` [ RunTime:0.013054s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `admin_app` LIMIT 1 [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_app` ORDER BY `app_addTime` DESC LIMIT 0,10 [ RunTime:0.000459s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:28:24+08:00 ] 127.0.0.1 GET www.api.com/admin/InterfaceList/refresh
+[运行时间：0.224914s] [吞吐率：4.45req/s] [内存消耗：2,364.08kb] [文件加载：61]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000561s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT file
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiAuth @ [ RunTime:0.002840s ]
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiPermission @ [ RunTime:0.001342s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\AdminLog @ [ RunTime:0.160356s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'InterfaceList',
+    2 => 'refresh',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'http://localhost:8080',
+  'apiauth' => '44d6b5945d1abaf1393bc58c05d4a5ac',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\InterfaceList->refresh[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\InterfaceList.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000573s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010003s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.035479s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `url` = 'admin/InterfaceList/refresh' LIMIT 1 [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_action` [ RunTime:0.012314s ]
+[ sql ] [ SQL ] INSERT INTO `admin_user_action` (`actionName` , `uid` , `nickname` , `addTime` , `url` , `data`) VALUES ('刷新路由' , 1 , 'root' , 1549852104 , 'admin/InterfaceList/refresh' , '[]') [ RunTime:0.090663s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_list` [ RunTime:0.011739s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_list` WHERE  `status` = 1 ORDER BY `groupHash` ASC [ RunTime:0.000540s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:28:41+08:00 ] 127.0.0.1 GET www.api.com/admin/AppGroup/index?page=1&size=10&type=&keywords=&status=
+[运行时间：0.179527s] [吞吐率：5.57req/s] [内存消耗：2,425.13kb] [文件加载：65]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000513s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT file
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiAuth @ [ RunTime:0.003619s ]
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiPermission @ [ RunTime:0.001431s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\AdminLog @ [ RunTime:0.128621s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'AppGroup',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'http://localhost:8080',
+  'apiauth' => '44d6b5945d1abaf1393bc58c05d4a5ac',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'size' => '10',
+  'type' => '',
+  'keywords' => '',
+  'status' => '',
+)
+[ info ] [ RUN ] app\admin\controller\AppGroup->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\AppGroup.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000647s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009950s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.029527s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `url` = 'admin/AppGroup/index' LIMIT 1 [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_action` [ RunTime:0.010957s ]
+[ sql ] [ SQL ] INSERT INTO `admin_user_action` (`actionName` , `uid` , `nickname` , `addTime` , `url` , `data`) VALUES ('应用分组列表' , 1 , 'root' , 1549852121 , 'admin/AppGroup/index' , '{\"page\":\"1\",\"size\":\"10\",\"type\":\"\",\"keywords\":\"\",\"status\":\"\"}') [ RunTime:0.064922s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_app_group` [ RunTime:0.010738s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `admin_app_group` LIMIT 1 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_app_group` LIMIT 0,10 [ RunTime:0.000333s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:28:56+08:00 ] 127.0.0.1 POST www.api.com/wiki/doLogin.html
+[运行时间：0.125746s] [吞吐率：7.95req/s] [内存消耗：2,202.76kb] [文件加载：50]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000495s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wiki',
+    1 => 'index',
+    2 => 'doLogin',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'PHPSESSID=d47nqjgcirp6oc90o94e4jumi0',
+  'connection' => 'close',
+  'content-length' => '58',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://www.api.com/wiki/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'appId' => ' 18070249',
+  'appSecret' => 'kQvnjQamyHvqNDtXNMHxelgSuZwWAaKS',
+)
+[ info ] [ RUN ] app\wiki\controller\Index->doLogin[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\wiki\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010303s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_app` [ RunTime:0.074440s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_app` WHERE  `app_id` = ' 18070249'  AND `app_secret` = 'kQvnjQamyHvqNDtXNMHxelgSuZwWAaKS' LIMIT 1 [ RunTime:0.000503s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:29:05+08:00 ] 127.0.0.1 POST www.api.com/wiki/doLogin.html
+[运行时间：0.123420s] [吞吐率：8.10req/s] [内存消耗：2,202.76kb] [文件加载：50]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000519s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wiki',
+    1 => 'index',
+    2 => 'doLogin',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'PHPSESSID=d47nqjgcirp6oc90o94e4jumi0',
+  'connection' => 'close',
+  'content-length' => '58',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://www.api.com/wiki/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'appId' => ' 18070249',
+  'appSecret' => 'kQvnjQamyHvqNDtXNMHxelgSuZwWAaKS',
+)
+[ info ] [ RUN ] app\wiki\controller\Index->doLogin[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\wiki\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000819s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_app` [ RunTime:0.082163s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_app` WHERE  `app_id` = ' 18070249'  AND `app_secret` = 'kQvnjQamyHvqNDtXNMHxelgSuZwWAaKS' LIMIT 1 [ RunTime:0.000512s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:29:56+08:00 ] 127.0.0.1 POST www.api.com/wiki/doLogin.html
+[运行时间：0.120817s] [吞吐率：8.28req/s] [内存消耗：2,318.81kb] [文件加载：51]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000662s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wiki',
+    1 => 'index',
+    2 => 'doLogin',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'PHPSESSID=d47nqjgcirp6oc90o94e4jumi0',
+  'connection' => 'close',
+  'content-length' => '57',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://www.api.com/wiki/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'appId' => '18070249',
+  'appSecret' => 'kQvnjQamyHvqNDtXNMHxelgSuZwWAaKS',
+)
+[ info ] [ RUN ] app\wiki\controller\Index->doLogin[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\wiki\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009854s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_app` [ RunTime:0.066660s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_app` WHERE  `app_id` = '18070249'  AND `app_secret` = 'kQvnjQamyHvqNDtXNMHxelgSuZwWAaKS' LIMIT 1 [ RunTime:0.000598s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:29:58+08:00 ] 127.0.0.1 GET www.api.com/wiki/index.html
+[运行时间：0.365919s] [吞吐率：2.73req/s] [内存消耗：2,342.88kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000517s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wiki',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'PHPSESSID=d47nqjgcirp6oc90o94e4jumi0',
+  'connection' => 'close',
+  'referer' => 'http://www.api.com/wiki/doLogin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\wiki\controller\Index->index[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\wiki\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\public/../application/wiki\view\index\index.html [ array (
+  0 => 'groupInfo',
+  1 => 'appInfo',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010094s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_group` [ RunTime:0.031679s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_group` [ RunTime:0.000513s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_app` [ RunTime:0.145114s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_app` WHERE  `app_id` = '18070249' LIMIT 1 [ RunTime:0.000504s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:30:00+08:00 ] 127.0.0.1 GET www.api.com/wiki/detail/5c527fb2afee3.html
+[运行时间：0.300720s] [吞吐率：3.33req/s] [内存消耗：2,385.56kb] [文件加载：58]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000676s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wiki',
+    1 => 'index',
+    2 => 'detail',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'PHPSESSID=d47nqjgcirp6oc90o94e4jumi0',
+  'connection' => 'close',
+  'referer' => 'http://www.api.com/wiki/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'groupHash' => '5c527fb2afee3',
+  'hash' => NULL,
+)
+[ info ] [ RUN ] app\wiki\controller\Index->detail[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\wiki\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT file
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\public/../application/wiki\view\index\detail.html [ array (
+  0 => 'groupInfo',
+  1 => 'request',
+  2 => 'response',
+  3 => 'dataType',
+  4 => 'apiList',
+  5 => 'detail',
+  6 => 'hash',
+  7 => 'groupHash',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010187s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_list` [ RunTime:0.024141s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_list` WHERE  `hash` IN ('5c527fc326ead')  AND `groupHash` = '5c527fb2afee3' [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_fields` [ RunTime:0.010139s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_fields` WHERE  `hash` = '5c527fc326ead'  AND `type` = 0 [ RunTime:0.000562s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_fields` WHERE  `hash` = '5c527fc326ead'  AND `type` = 1 [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_group` [ RunTime:0.011357s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_group` WHERE  `hash` = '5c527fb2afee3' LIMIT 1 [ RunTime:0.000412s ]
+[ sql ] [ SQL ] UPDATE `admin_group`  SET `hot`=6  WHERE  `id` = 2 [ RunTime:0.065812s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:30:13+08:00 ] 127.0.0.1 GET www.api.com/admin/Fields/response?page=1&size=10&hash=5c527fc326ead
+[运行时间：0.261125s] [吞吐率：3.83req/s] [内存消耗：2,446.38kb] [文件加载：66]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000739s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT file
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiAuth @ [ RunTime:0.002556s ]
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiPermission @ [ RunTime:0.001375s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\AdminLog @ [ RunTime:0.209303s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Fields',
+    2 => 'response',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'http://localhost:8080',
+  'apiauth' => '44d6b5945d1abaf1393bc58c05d4a5ac',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'size' => '10',
+  'hash' => '5c527fc326ead',
+)
+[ info ] [ RUN ] app\admin\controller\Fields->response[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\Fields.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000485s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011457s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.120098s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `url` = 'admin/Fields/response' LIMIT 1 [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_action` [ RunTime:0.011193s ]
+[ sql ] [ SQL ] INSERT INTO `admin_user_action` (`actionName` , `uid` , `nickname` , `addTime` , `url` , `data`) VALUES ('获取接口返回字段' , 1 , 'root' , 1549852213 , 'admin/Fields/response' , '{\"page\":\"1\",\"size\":\"10\",\"hash\":\"5c527fc326ead\"}') [ RunTime:0.052558s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_fields` [ RunTime:0.011225s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `admin_fields` WHERE  `hash` = '5c527fc326ead'  AND `type` = 1 LIMIT 1 [ RunTime:0.000520s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_fields` WHERE  `hash` = '5c527fc326ead'  AND `type` = 1 LIMIT 0,10 [ RunTime:0.000472s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:30:20+08:00 ] 127.0.0.1 POST www.api.com/admin/Fields/upload
+[运行时间：0.344552s] [吞吐率：2.90req/s] [内存消耗：2,365.23kb] [文件加载：63]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000453s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT file
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiAuth @ [ RunTime:0.002718s ]
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiPermission @ [ RunTime:0.001242s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\AdminLog @ [ RunTime:0.116293s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Fields',
+    2 => 'upload',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'http://localhost:8080',
+  'content-length' => '868',
+  'apiauth' => '44d6b5945d1abaf1393bc58c05d4a5ac',
+  'content-type' => 'application/json;charset=utf-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'jsonStr' => '{"code":1,"msg":"登录成功","data":[{"NIAN":"2019","SEASON":"春","SEASON_ID":"37","JI":"春季外购","LAIYUAN":"1","FHL":"606144","QH":"204642","BH":"401502","BDL":".66%","KS":"111","KH":"http:\\/\\/10.10.1.32:8018\\/Images\\/sku\\/377511225.jpg"},{"NIAN":"2019","SEASON":"春","SEASON_ID":"37","JI":"春季本厂","LAIYUAN":"2","FHL":"1817370","QH":"1433412","BH":"383958","BDL":".21%","KS":"210","KH":"http:\\/\\/10.10.1.32:8018\\/Images\\/sku\\/377110090.jpg"},{"NIAN":"2019","SEASON":"夏","SEASON_ID":"38","JI":"夏季本厂","LAIYUAN":"2","FHL":"600120","QH":"589500","BH":"10620","BDL":".02%","KS":"80","KH":"http:\\/\\/10.10.1.32:8018\\/Images\\/sku\\/377130069.jpg"}]}',
+  'type' => 1,
+  'hash' => '5c527fc326ead',
+)
+[ info ] [ RUN ] app\admin\controller\Fields->upload[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\Fields.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000500s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010301s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.017607s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `url` = 'admin/Fields/upload' LIMIT 1 [ RunTime:0.000532s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_action` [ RunTime:0.011064s ]
+[ sql ] [ SQL ] INSERT INTO `admin_user_action` (`actionName` , `uid` , `nickname` , `addTime` , `url` , `data`) VALUES ('上传接口返回字段' , 1 , 'root' , 1549852220 , 'admin/Fields/upload' , '{\"jsonStr\":\"{\\\"code\\\":1,\\\"msg\\\":\\\"\\u767b\\u5f55\\u6210\\u529f\\\",\\\"data\\\":[{\\\"NIAN\\\":\\\"2019\\\",\\\"SEASON\\\":\\\"\\u6625\\\",\\\"SEASON_ID\\\":\\\"37\\\",\\\"JI\\\":\\\"\\u6625\\u5b63\\u5916\\u8d2d\\\",\\\"LAIYUAN\\\":\\\"1\\\",\\\"FHL\\\":\\\"606144\\\",\\\"QH\\\":\\\"204642\\\",\\\"BH\\\":\\\"401502\\\",\\\"BDL\\\":\\\".66%\\\",\\\"KS\\\":\\\"111\\\",\\\"KH\\\":\\\"http:\\\\\\/\\\\\\/10.10.1.32:8018\\\\\\/Images\\\\\\/sku\\\\\\/377511225.jpg\\\"},{\\\"NIAN\\\":\\\"2019\\\",\\\"SEASON\\\":\\\"\\u6625\\\",\\\"SEASON_ID\\\":\\\"37\\\",\\\"JI\\\":\\\"\\u6625\\u5b63\\u672c\\u5382\\\",\\\"LAIYUAN\\\":\\\"2\\\",\\\"FHL\\\":\\\"1817370\\\",\\\"QH\\\":\\\"1433412\\\",\\\"BH\\\":\\\"383958\\\",\\\"BDL\\\":\\\".21%\\\",\\\"KS\\\":\\\"210\\\",\\\"KH\\\":\\\"http:\\\\\\/\\\\\\/10.10.1.32:8018\\\\\\/Images\\\\\\/sku\\\\\\/377110090.jpg\\\"},{\\\"NIAN\\\":\\\"2019\\\",\\\"SEASON\\\":\\\"\\u590f\\\",\\\"SEASON_ID\\\":\\\"38\\\",\\\"JI\\\":\\\"\\u590f\\u5b63\\u672c\\u5382\\\",\\\"LAIYUAN\\\":\\\"2\\\",\\\"FHL\\\":\\\"600120\\\",\\\"QH\\\":\\\"589500\\\",\\\"BH\\\":\\\"10620\\\",\\\"BDL\\\":\\\".02%\\\",\\\"KS\\\":\\\"80\\\",\\\"KH\\\":\\\"http:\\\\\\/\\\\\\/10.10.1.32:8018\\\\\\/Images\\\\\\/sku\\\\\\/377130069.jpg\\\"}]}\",\"type\":1,\"hash\":\"5c527fc326ead\"}') [ RunTime:0.065569s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_list` [ RunTime:0.011381s ]
+[ sql ] [ SQL ] UPDATE `admin_list`  SET `returnStr`='{\"code\":1,\"msg\":\"\\u767b\\u5f55\\u6210\\u529f\",\"data\":[{\"NIAN\":\"2019\",\"SEASON\":\"\\u6625\",\"SEASON_ID\":\"37\",\"JI\":\"\\u6625\\u5b63\\u5916\\u8d2d\",\"LAIYUAN\":\"1\",\"FHL\":\"606144\",\"QH\":\"204642\",\"BH\":\"401502\",\"BDL\":\".66%\",\"KS\":\"111\",\"KH\":\"http:\\/\\/10.10.1.32:8018\\/Images\\/sku\\/377511225.jpg\"},{\"NIAN\":\"2019\",\"SEASON\":\"\\u6625\",\"SEASON_ID\":\"37\",\"JI\":\"\\u6625\\u5b63\\u672c\\u5382\",\"LAIYUAN\":\"2\",\"FHL\":\"1817370\",\"QH\":\"1433412\",\"BH\":\"383958\",\"BDL\":\".21%\",\"KS\":\"210\",\"KH\":\"http:\\/\\/10.10.1.32:8018\\/Images\\/sku\\/377110090.jpg\"},{\"NIAN\":\"2019\",\"SEASON\":\"\\u590f\",\"SEASON_ID\":\"38\",\"JI\":\"\\u590f\\u5b63\\u672c\\u5382\",\"LAIYUAN\":\"2\",\"FHL\":\"600120\",\"QH\":\"589500\",\"BH\":\"10620\",\"BDL\":\".02%\",\"KS\":\"80\",\"KH\":\"http:\\/\\/10.10.1.32:8018\\/Images\\/sku\\/377130069.jpg\"}]}'  WHERE  `hash` = '5c527fc326ead' [ RunTime:0.061622s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_fields` [ RunTime:0.011295s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_fields` WHERE  `hash` = '5c527fc326ead'  AND `type` = 1 [ RunTime:0.000483s ]
+[ sql ] [ SQL ] INSERT INTO `admin_fields` (`fieldName` , `showName` , `hash` , `isMust` , `dataType` , `type`) VALUES ( 'data','data','5c527fc326ead',1,3,'1' ) , ( 'data','data[]','5c527fc326ead',1,9,'1' ) , ( 'NIAN','data[]{}NIAN','5c527fc326ead',1,1,'1' ) , ( 'SEASON','data[]{}SEASON','5c527fc326ead',1,2,'1' ) , ( 'SEASON_ID','data[]{}SEASON_ID','5c527fc326ead',1,1,'1' ) , ( 'JI','data[]{}JI','5c527fc326ead',1,2,'1' ) , ( 'LAIYUAN','data[]{}LAIYUAN','5c527fc326ead',1,1,'1' ) , ( 'FHL','data[]{}FHL','5c527fc326ead',1,1,'1' ) , ( 'QH','data[]{}QH','5c527fc326ead',1,1,'1' ) , ( 'BH','data[]{}BH','5c527fc326ead',1,1,'1' ) , ( 'BDL','data[]{}BDL','5c527fc326ead',1,2,'1' ) , ( 'KS','data[]{}KS','5c527fc326ead',1,1,'1' ) , ( 'KH','data[]{}KH','5c527fc326ead',1,2,'1' ) [ RunTime:0.090426s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:30:21+08:00 ] 127.0.0.1 GET www.api.com/admin/Fields/response?page=1&size=10&hash=5c527fc326ead
+[运行时间：0.180388s] [吞吐率：5.54req/s] [内存消耗：2,449.96kb] [文件加载：66]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000719s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT file
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiAuth @ [ RunTime:0.003072s ]
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiPermission @ [ RunTime:0.001441s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\AdminLog @ [ RunTime:0.118805s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Fields',
+    2 => 'response',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'http://localhost:8080',
+  'apiauth' => '44d6b5945d1abaf1393bc58c05d4a5ac',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'size' => '10',
+  'hash' => '5c527fc326ead',
+)
+[ info ] [ RUN ] app\admin\controller\Fields->response[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\Fields.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000579s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000853s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.014441s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `url` = 'admin/Fields/response' LIMIT 1 [ RunTime:0.000658s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_action` [ RunTime:0.013169s ]
+[ sql ] [ SQL ] INSERT INTO `admin_user_action` (`actionName` , `uid` , `nickname` , `addTime` , `url` , `data`) VALUES ('获取接口返回字段' , 1 , 'root' , 1549852220 , 'admin/Fields/response' , '{\"page\":\"1\",\"size\":\"10\",\"hash\":\"5c527fc326ead\"}') [ RunTime:0.074607s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_fields` [ RunTime:0.014200s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `admin_fields` WHERE  `hash` = '5c527fc326ead'  AND `type` = 1 LIMIT 1 [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_fields` WHERE  `hash` = '5c527fc326ead'  AND `type` = 1 LIMIT 0,10 [ RunTime:0.000514s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:30:25+08:00 ] 127.0.0.1 GET www.api.com/wiki/detail/5c527fb2afee3.html
+[运行时间：0.215747s] [吞吐率：4.64req/s] [内存消耗：2,402.70kb] [文件加载：58]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000520s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wiki',
+    1 => 'index',
+    2 => 'detail',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'PHPSESSID=d47nqjgcirp6oc90o94e4jumi0',
+  'connection' => 'close',
+  'referer' => 'http://www.api.com/wiki/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'groupHash' => '5c527fb2afee3',
+  'hash' => NULL,
+)
+[ info ] [ RUN ] app\wiki\controller\Index->detail[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\wiki\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT file
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\public/../application/wiki\view\index\detail.html [ array (
+  0 => 'groupInfo',
+  1 => 'request',
+  2 => 'response',
+  3 => 'dataType',
+  4 => 'apiList',
+  5 => 'detail',
+  6 => 'hash',
+  7 => 'groupHash',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010429s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_list` [ RunTime:0.046095s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_list` WHERE  `hash` IN ('5c527fc326ead')  AND `groupHash` = '5c527fb2afee3' [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_fields` [ RunTime:0.010211s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_fields` WHERE  `hash` = '5c527fc326ead'  AND `type` = 0 [ RunTime:0.000440s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_fields` WHERE  `hash` = '5c527fc326ead'  AND `type` = 1 [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_group` [ RunTime:0.011523s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_group` WHERE  `hash` = '5c527fb2afee3' LIMIT 1 [ RunTime:0.000440s ]
+[ sql ] [ SQL ] UPDATE `admin_group`  SET `hot`=7  WHERE  `id` = 2 [ RunTime:0.089844s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:33:01+08:00 ] 127.0.0.1 GET www.api.com/admin/Fields/response?page=1&size=10&hash=5c527fc326ead
+[运行时间：0.270919s] [吞吐率：3.69req/s] [内存消耗：2,449.96kb] [文件加载：66]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000582s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT file
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiAuth @ [ RunTime:0.004255s ]
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiPermission @ [ RunTime:0.003054s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\AdminLog @ [ RunTime:0.144144s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Fields',
+    2 => 'response',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'http://localhost:8080',
+  'apiauth' => '44d6b5945d1abaf1393bc58c05d4a5ac',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'size' => '10',
+  'hash' => '5c527fc326ead',
+)
+[ info ] [ RUN ] app\admin\controller\Fields->response[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\Fields.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000554s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002950s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.011927s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `url` = 'admin/Fields/response' LIMIT 1 [ RunTime:0.000646s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_action` [ RunTime:0.012263s ]
+[ sql ] [ SQL ] INSERT INTO `admin_user_action` (`actionName` , `uid` , `nickname` , `addTime` , `url` , `data`) VALUES ('获取接口返回字段' , 1 , 'root' , 1549852381 , 'admin/Fields/response' , '{\"page\":\"1\",\"size\":\"10\",\"hash\":\"5c527fc326ead\"}') [ RunTime:0.101130s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_fields` [ RunTime:0.012189s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `admin_fields` WHERE  `hash` = '5c527fc326ead'  AND `type` = 1 LIMIT 1 [ RunTime:0.000547s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_fields` WHERE  `hash` = '5c527fc326ead'  AND `type` = 1 LIMIT 0,10 [ RunTime:0.000580s ]
+---------------------------------------------------------------
+[ 2019-02-11T10:33:03+08:00 ] 127.0.0.1 GET www.api.com/admin/InterfaceGroup/getAll
+[运行时间：0.173857s] [吞吐率：5.75req/s] [内存消耗：2,354.23kb] [文件加载：61]
+[ info ] [ BEHAVIOR ] Run app\bi\behavior\CORS @app_init [ RunTime:0.000566s ]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\ApiAdmin\thinkphp\lang\zh-cn.php
+[ info ] [ CACHE ] INIT file
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiAuth @ [ RunTime:0.002565s ]
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\ApiPermission @ [ RunTime:0.001247s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\admin\behavior\AdminLog @ [ RunTime:0.119134s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'InterfaceGroup',
+    2 => 'getAll',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'origin' => 'http://localhost:8080',
+  'apiauth' => '44d6b5945d1abaf1393bc58c05d4a5ac',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => 'www.api.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\InterfaceGroup->getAll[ D:\phpStudy\PHPTutorial\WWW\ApiAdmin\application\admin\controller\InterfaceGroup.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\BuildResponse @response_send [ RunTime:0.000545s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000820s ] mysql:host=127.0.0.1;dbname=apiadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_menu` [ RunTime:0.022391s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_menu` WHERE  `url` = 'admin/InterfaceGroup/getAll' LIMIT 1 [ RunTime:0.000647s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_user_action` [ RunTime:0.013201s ]
+[ sql ] [ SQL ] INSERT INTO `admin_user_action` (`actionName` , `uid` , `nickname` , `addTime` , `url` , `data`) VALUES ('获取全部有效的接口组' , 1 , 'root' , 1549852383 , 'admin/InterfaceGroup/getAll' , '[]') [ RunTime:0.070193s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_group` [ RunTime:0.015690s ]
+[ sql ] [ SQL ] SELECT * FROM `admin_group` WHERE  `status` = 1 [ RunTime:0.001365s ]
